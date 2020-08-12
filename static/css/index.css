@@ -1,0 +1,92 @@
+/* Jumbotron */
+.jumbotron {
+    background-color: #292929;
+    z-index: 1;
+    position: relative;
+    color: white;
+}
+.jumbotron-title {
+    text-transform: capitalize;
+    font-weight: 700 !important;
+    z-index: 3;
+    color: white !important;
+    position: inherit;
+}
+#jumbotron-image {
+    position: absolute;
+    bottom: -70px;
+    right: 20px;
+    z-index: 100;
+}
+
+@media(max-width: 720px) {
+    #jumbotron-image {
+        display: none;
+    }
+}
+
+
+/* Main */
+#listing-heading {
+    color: #E78200;
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 20px;
+    margin: 0 0 24px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Card */
+.card {
+    box-shadow: 0 16px 48px #E3E7EB;
+}
+.card-down {
+    display: flex;
+    justify-content: space-between;
+}
+.card-down-button {
+    /* color:white; */
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.card-down>div>p {
+    color: grey;
+    font-size: 16px;
+    margin: 0px;
+    line-height: 43px;
+    text-transform: uppercase;
+
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* After Section */
+.after-con {
+    margin-top: 50px;
+    background-color: firebrick;
+    color: white;
+    padding: 30px;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 17px;
+}
+
+
+/* Info Section */
+.inf-block {
+    /* margin-top: 0px; */
+    background-color: #FDFDFD;
+    color: black;
+    text-align: center;
+    padding: 30px;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 17px;
+}
+.inf-block>div>h1 {
+    color:black !important;
+}

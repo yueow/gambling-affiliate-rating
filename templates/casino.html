@@ -1,0 +1,415 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'scss/casino.css' %}">
+{% endblock extra_css %}
+
+{% block content %}
+<a id="casino-detail-start" href=""></a>
+
+<!-- Casino Container -->
+<div class="container">
+    <hr>
+    <!-- Casino Header -->
+    <header>
+        <div class="row">
+
+            <!-- First Header Column -->
+            <div class="col">
+                <!-- Casino Image -->
+                <div class="casino-header-image">
+                    <a href="#">
+                        <img src="{{ casino.image.url }}"
+                            alt="{{ casino.title }}">
+                    </a>
+                </div>
+                <!--  -->
+
+                <!-- Jackpot Section -->
+                <div class="jackpot shadow">
+                    <a href="#">
+                        <h2>Claim Jackpot <span
+                                class="jackpot-digits">{{ casino.jackpot}}</span>
+                        </h2>
+                        <p class='text-center'>Play and win <i
+                                class="far fa-money-bill-alt"></i>
+                        </p>
+                    </a>
+                </div>
+                <!--  -->
+            </div>
+            <!--  -->
+
+            <!-- Second Header Column -->
+            <div class="col">
+                <a href="#">
+                    <h1 class='casino-header-title'>{{ casino.title }}</h1>
+                </a>
+
+                <p class='mb-2'>
+                    {% if casino.scam %}
+                    <a href="#"><span
+                            class="marker shadow badge">Scam</span></a>
+                    {% endif %} {% if casino.crypto %}
+                    <a href="#"><span
+                            class="marker shadow badge">Crypto</span></a>
+                    {% endif %} {% if casino.script %}
+                    <a href="#"><span
+                            class="marker shadow badge">Script</span></a>
+                    {% endif %}
+                </p>
+
+                {% if casino.dol %}
+                <p>
+                    <a href=""><i class="fas fa-birthday-cake"></i> Year of
+                        creation: {{ casino.dol }}</a>
+                </p>
+                {% endif %}
+
+                <p class='my-3'>
+                    {{ casino.short_desc }}
+                </p>
+
+                <a
+                    href="http://localhost:8000/casino/ttr-casino/#casino-detail-start">
+                    <p class="affiliate-button shadow">Play</p>
+                </a>
+
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Rating Section -->
+    <table class="table table-hover shadow">
+        <tbody>
+            <a name="casino-rating" href=""></a>
+            <tr>
+                <td><a href="http://www.google.com">Main <i
+                            class="fas fa-crown"></i></a></td>
+
+                <td class="table_rate"><a href="http://www.google.com">
+                        {{ casino.rate }} <img src="{% static 'img/star.png' %}"
+                            alt=""></a>
+                </td>
+                <td class="table_full_rate"><a href="http://www.google.com">
+                        {% for _ in casino.rate_range %}
+                        <img src="{% static 'img/star.png' %}" alt="">
+                        {% endfor %}</a>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="#">Safe</a></td>
+
+                <td class="table_rate"><a href="http://www.google.com">
+                        {{ casino.rate_safe }} <img
+                            src="{% static 'img/star.png' %}" alt="">
+                    </a></td>
+                <td class="table_full_rate"><a href="http://www.google.com">
+                        {% for _ in casino.rate_safe_range %}
+                        <img src="{% static 'img/star.png' %}" alt="">
+                        {% endfor %}</a>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="#">Faith</a></td>
+
+                <td class="table_rate"><a href="http://www.google.com">
+                        {{ casino.rate_faith }}
+                        <img src="{% static 'img/star.png' %}" alt="">
+
+                    </a></td>
+                <td class="table_full_rate"><a href="http://www.google.com">
+                        {% for _ in casino.rate_faith_range %}
+                        <img src="{% static 'img/star.png' %}" alt="">
+                        {% endfor %}</a>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="http://www.google.com">Design</a></td>
+
+                <td class="table_rate"><a href="http://www.google.com">
+                        {{ casino.rate_design }}
+                        <img src="{% static 'img/star.png' %}" alt="">
+                    </a></td>
+                <td class="table_full_rate"><a href="http://www.google.com">
+                        {% for _ in casino.rate_design_range %}
+                        <img src="{% static 'img/star.png' %}" alt="">
+                        {% endfor %}</a>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="http://www.google.com">Software</a></td>
+
+                <td class="table_rate"><a href="http://www.google.com">
+                        {{ casino.rate_soft }}
+                        <img src="{% static 'img/star.png' %}" alt="">
+                    </a></td>
+                <td class="table_full_rate"><a href="http://www.google.com">
+                        {% for _ in casino.rate_soft_range %}
+                        <img src="{% static 'img/star.png' %}" alt="">
+                        {% endfor %}</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- /Rating Section -->
+
+
+    <!-- Description -->
+    <div class="row description-section shadow">
+
+        <!-- /Column One -->
+        <div class="col">
+            <ul>
+                {% if casino.banned_countries %}
+                <li>
+                    <p><i class="fas fa-flag"></i> Resctricted countries:
+                        {{ casino.banned_countries }}</p>
+                </li>
+                {% endif %}
+                <li>
+                    <p><i class="fas fa-file-invoice"></i> License:
+                        {{ casino.ca_license|default:'No' }}</p>
+                </li>
+                <li>
+                    <p><i class="fas fa-money-bill-wave-alt"></i> Cashback:
+                        {{ casino.cashback|default:"No" }}</p>
+                </li>
+                <li>
+                    <p><i class="fas fa-money-bill-wave-alt"></i> Accept crypto:
+                        {{ casino.acceptCrypto|yesno:"Yes,No" }}</p>
+                </li>
+
+                <!-- Withdrwal section -->
+                <hr>
+                <li>
+                    <p><i class="fas fa-angle-down"></i> Min deposit:
+                        {{ casino.min_in }}</p>
+                </li>
+                <li>
+                    <p><i class="fas fa-angle-up"></i> Min withdrwal:
+                        {{ casino.min_output }}</p>
+                </li>
+                <li>
+                    <p><i class="fas fa-angle-double-up"></i> Max withdrwal:
+                        {{ casino.max_output }}</p>
+                </li>
+                <br>
+                <li>
+                    <p><i class="far fa-id-card"></i> Docs for withdrwal:
+                        {{ casino.with_docs_bool|yesno:"Yes, No" }}</p>
+                </li>
+
+
+                {% if casino.with_freq %}
+                <li>
+                    <p><i class="fas fa-wave-square"></i> Withdrwal frequency:
+                        {{ casino.with_freq }}</p>
+                </li>
+                {% endif %} {% if casino.with_easy %}
+                <li>
+                    <p><i class="fas fa-share"></i> Сomplexity of withdrawal:
+                        {{ casino.with_easy }}</p>
+                </li>
+                {% endif %}
+
+                <!-- Support Section -->
+                <hr>
+                <li>
+                    <p><i class="fas fa-question-circle"></i> Support grade:
+                        {{ casino.support_grade }}</p>
+
+                </li>
+                <li>
+                    <p><img src="https://cdn.countryflags.com/thumbs/russia/flag-button-square-250.png"
+                            width=20px alt=""> Russian speaking support:
+                        {{ casino.rus_support|yesno:"Yes,No" }}</p>
+                </li>
+
+                {% if casino.support_desc %}
+                <li>
+                    <p><i class="fas fa-headset"></i> Support review:
+                        {{ casino.support_desc }}</p>
+                </li>
+                {% endif %}
+
+                <hr>
+                <!--  -->
+
+                <!--  -->
+                <li>
+                    <p><i class="far fa-money-bill-alt"></i> Jackpot:
+                        {{ casino.jackpot|default:"No" }}</p>
+                </li>
+
+            </ul>
+
+
+        </div>
+        <!-- /Column One -->
+
+        <!-- Column Two -->
+        <div class="col">
+            <ul>
+                {% if casino.crypto %}
+                <a href="">
+                    <li>
+                        <a href=""><span
+                                class="marker badge badge-primary">Crypto</span></a>
+                        <p>CryptoCasino: {{ casino.crypto|yesno:"Yes,No"}}</p>
+                        <!-- <p class="description-info">Криптовалютные казино работают по принципу</p> -->
+                    </li>
+                </a>
+                {% endif %} {% if casino.scam %}
+                <li>
+                    <a href=""><span
+                            class="marker badge badge-danger">Scam</span></a>
+                    <p class="description-info">
+                        Осторожно! Мошейнический проект!
+                        <a href="">Что это означает и почему проекту выдается
+                            статус Scam-проекта</a>
+                    </p>
+                </li>
+                {% endif %} {% if casino.script %}
+                <li>
+                    <a href=""><span
+                            class="marker badge badge-warning">Script</span></a>
+                    <p>Script: Yes</p>
+                    <p class="description-info">
+                        What does it mean?
+
+
+                    </p>
+                </li>
+                {% endif %}
+
+            </ul>
+
+        </div>
+        <!-- /Column Two -->
+    </div>
+    <!--  -->
+
+
+    <!-- Pros&Cons Block -->
+    <div class="row conspros-block">
+        <div class="col pros-block">
+            <h3><i class="fas fa-plus-circle"></i> Pros</h3>
+            <ul>
+                {% for i in casino.pros_as_list %}
+                <li><i class="fas fa-plus"></i> {{ i }}</li>
+                {% endfor %}
+            </ul>
+
+        </div>
+        <div class="col cons-block">
+            <h3><i class="fas fa-minus-circle"></i> Cons</h3>
+            <ul>
+                {% for i in casino.cons_as_list %}
+                <li><i class="fas fa-minus"></i> {{ i }}</li>
+                {% endfor %}
+            </ul>
+
+        </div>
+    </div>
+    <!--  -->
+
+
+    <!-- Jackpot Large Block -->
+    <div class="jackpot-large jackpot shadow">
+        <a href="#">
+            <h2>Claim Jackpot <span class="jackpot-digits">$1 000 000</span>
+            </h2>
+            <p>Play and win <i class="fas fa-money-bill-alt"></i></p>
+        </a>
+    </div>
+    <!--  -->
+
+
+    <!-- Casino Content -->
+    <div class="casino-content text-center">
+        <a name="casino-content" href="#"></a>
+        {{ casino.content|safe }}
+
+    </div>
+    <!--  -->
+
+
+    <!-- Payment Block -->
+    <div class="payment-block text-center">
+        <div class="payment-content">
+
+            {% for pm in casino.get_payments %}
+            <a href=""><img width="{{pm.image_wd}}" height="{{pm.image_hg}}"
+                    src="{{ pm.image.url }}" alt="{{ pm.name }}"></a>
+            {% endfor %}
+
+        </div>
+    </div>
+    <!-- -->
+
+
+    <!-- Bonus Block -->
+    <div class="bonus-block">
+
+        <!-- Bonus  -->
+        <a href="">
+            <div class="jackpot bonus-advertising text-center">
+                <h2>Best No Deposit Casino Bonuses in 2020 </h2>
+                <p>Want to make the most of casino bonuses without having to
+                    deposit your own cash and keep what you win? A no deposit
+                    bonus mean you can play for free but win real money. We have
+                    compiled an up-to-date list of 2020's best no deposit bonus
+                    offers. Make an informed decision about where to sign up, by
+                    comparing the best the industry has to offer. </p>
+            </div>
+        </a>
+        <!-- /Bonus adv block -->
+
+        {% comment %} <h2 class="text-center">Бонусы от {{ casino.title }}</h2>
+
+
+        <!-- Bonus Listing -->
+        <ul class="bonus-card-list">
+            {% for b in casino.get_bonuses %}
+            <li>
+                <a href="">
+                    <div class="bonus-card">
+                        <h3>{{ b.two_word_desc }}</h3>
+                        <p>Депозитный бонус: {{ b.dep_bool|yesno:"Да,Нет,Хз" }}
+                        </p>
+                        {% if b.dep_bool %}
+                        <p>Размер депозита: {{ b.dep }}</p>
+                        {% endif %}
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Voluptatum quas repellendus, possimus
+                            reiciendis quos incidunt voluptatem. Deserunt quod
+                            necessitatibus neque eligendi eos nihil, blanditiis
+                            sint rerum nesciunt libero
+                            reprehenderit officiis.</p>
+                    </div>
+                </a>
+            </li>
+            {% endfor %}
+        </ul> {% endcomment %}
+        <!--  -->
+
+
+        <!-- Another Bonuses  -->
+        <div class="another-bonuses text-center">
+            <a href="">
+                <h2>Check Out All Bonuses For The Casino</h2>
+                <p><i class="fas fa-chevron-down"></i></p>
+            </a>
+        </div>
+        <!--  -->
+
+
+    </div>
+    <!-- /Bonus block -->
+
+</div>
+{% endblock %}

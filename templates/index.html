@@ -1,0 +1,197 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/index.css' %}">
+{% endblock extra_css %}
+
+{% block content %}
+<div class="jumbotron">
+    <!-- Pin Up Girl -->
+    <img id="jumbotron-image" src="{% static 'img/pinup_girl.png' %}"
+        alt="Pin Up Girl">
+
+    <div class="container">
+        <h1 class="display-4 text-center jumbotron-title">Best casinos in 2019
+        </h1>
+        <p class="lead">
+            Thanks to the online casinos, it is possible to play whenever and
+            wherever you like by using your computer, smartphone or tablet.
+            Since most online casinos also offer a user-friendly mobile platform
+            that is fully compatible with various mobile devices, it is even
+            possible to play on the move. Gambling online can be a great
+            experience as long as you play in only reputable online casinos. It
+            is essential to manage to choose the best online casino as your
+            gaming experience greatly depends on it.
+        </p>
+
+        <hr class="my-4">
+
+        <p>
+            Playing casino games online can be a truly fabulous experience. It’s
+            better when you win, of course, but it can still be fun even when
+            you lose. It’s important, if not essential, that you use the best
+            online casinos when playing for real money.
+        </p>
+
+        <p class="lead">
+            <a class="btn btn-success btn-lg header-rating-button">See our list
+                of TOP rated casinos</a>
+        </p>
+    </div>
+</div>
+
+<!-- Main -->
+<main>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 mt-3 left">
+                <a name="fresh-posts" href=""></a>
+                <h2 id="listing-heading">New Posts</h2>
+
+                {% for post in postQuery %}
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h2 class="card-title">{{ post.title }}</h2>
+
+                        <p class="card-text text-muted h6">
+                            {{ post.created_on|date:'d/m/Y H:i' }} </p>
+                        <p class="card-text">
+                            {{post.content|truncatechars_html:300|safe }}</p>
+
+                        <div class="card-down">
+                            <!-- !Добавить model field минут на прочтение -->
+                            <div>
+                                <p>3 minutes</p>
+                            </div>
+
+                            <div>
+                                <a class="btn btn-success btn-lg card-down-button"
+                                    href="{% url 'post_detail' post.slug  %}">Read</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                {% endfor %}
+
+                <!-- Pagintaion  -->
+                <ul class="pagination">
+
+                    {% if postQuery.has_previous %}
+
+                    <li class="page-item"><a class="page-link"
+                            href="?page=1#listing-heading">&lt;&lt;</a></li>
+                    <li class="page-item"><a class="page-link"
+                            href="?page={{ postQuery.previous_page_number }}#listing-heading">&lt;</a>
+                    </li>
+                    {% endif %}
+
+                    {% for num in postQuery.paginator.page_range %}
+                    {% if postQuery.number == num %}
+                    <li class="page-item active"><a class="page-link"
+                            href="?page={{ num }}#listing-heading">{{ num }}</a>
+                    </li>
+                    {% elif num > postQuery.number|add:'-3' and num < postQuery.number|add:'3' %}
+                    <li class="page-item"><a class="page-link"
+                            href="?page={{ num }}#listing-heading">{{ num }}</a>
+                    </li>
+                    {% endif %}
+                    {% endfor %}
+
+                    {% if postQuery.has_next %}
+                    <li class="page-item"><a class="page-link"
+                            href="?page={{ postQuery.next_page_number }}#listing-heading">&gt;</a>
+                    </li>
+                    <li class="page-item"><a class="page-link"
+                            href="?page={{ postQuery.paginator.num_pages }}#listing-heading">&gt;&gt;</a>
+                    </li>
+                    {% endif %}
+                </ul>
+                <!--  -->
+            </div>
+
+            <!-- Rating Sidebar -->
+            {% include 'sidebar.html' %}
+        </div>
+    </div>
+
+
+</main>
+
+
+<!-- Information Section -->
+<section class="after-con">
+    <div class="container">
+        <h1 class="text-center font-weight-bold">How to choose the best casino
+        </h1>
+        <div class="row">
+            <div class="col-sm">
+                <img src="{% static 'img/phone_girl.png' %}"
+                    alt="Girl w/ Phone">
+
+            </div>
+            <div class="col-sm">
+
+                <p>Online Gambling Guide: How To Choose The Best Online Casino
+                    In 2020 best online casino gambling sites </p>
+                <p>
+                    Share this entry Online gambling is booming even between
+                    poker players and is becoming one of the favorite pastimes
+                    of many. With every day, online casino game developers are
+                    coming with ideas that are more entertaining and more
+                    exciting, attracting an
+                    increasing number of people to the industry. Interesting
+                    games, an engaging experience, and, of course, the chance to
+                    win money, are all factors that come into play. With the
+                    increased popularity and demand, it is only natural for
+                    the offer to grow as well. Today, the number of top online
+                    casinos available on the web is probably ten times bigger
+                    than what it was a few years ago – and there are new virtual
+                    casinos opening their doors almost every day. With so
+                    many options, how does one go about choosing the best online
+                    casino site for gambling? If you aren't experienced in the
+                    industry and are someone just looking to have some fun, all
+                    these casinos may seem identical.
+                </p>
+
+                <h3>We provide you updates about:</h3>
+                <ul>
+                    <li>Free slot spins</li>
+                    <li>First deposit bonuses</li>
+                    <li>Free offers</li>
+                    <li>Loyalty programs</li>
+                    <li>Races, leaderboards, etc.</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!--  -->
+
+
+
+
+<!-- After-content block  -->
+<section class="inf-block">
+    <div class="container">
+        <h1 class="display-4 font-weight-bold">Who we are</h1>
+        <p class="lead">
+            We are leading resource for everything bettors, sports fans and
+            gamblers want to know about the world of casinos, sports betting and
+            poker. Whether it's impartial reviews of online casinos and
+            sportsbooks, in-depth game or sports events guides, finding
+            the best bonuses, or creating fun free games, our team of gambling
+            experts work every day to keep our readers up-to-date on the topics
+            that matter to them.
+        </p>
+
+        <p><img src="https://www.bettergov.org/sites/default/files/styles/story_lead/public/articles/2019/02/chicago_casino_BGA.png?itok=a-rL1MsA"
+                alt="Casino Image"></p>
+    </div>
+</section>
+<!--  -->
+
+{% endblock %}

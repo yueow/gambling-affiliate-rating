@@ -1,0 +1,118 @@
+/*  */
+@import '_config.scss';
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: $font-default;
+    font-size: 18px;
+    background-color: #fdfdfd;
+}
+
+a {
+    &:link {
+        color: black;
+    }
+
+    &:hover {
+        color: red;
+        text-decoration: none;
+    }
+}
+
+.shadow {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn {
+    font-weight: 700;
+    color: white !important;
+    border-radius: 0 !important;
+}
+
+
+/* Rating card Stars */
+.rating-card-stars {
+    margin-block: 1rem;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+// .justify-content-center {
+//     text-align: center;
+// }
+
+
+/* Figure out wtf is that */
+/* .masthead {
+    background: #3398e1;
+    height: auto;
+    padding-bottom: 15px;
+    box-shadow: 0 44px 48px #e3e7eb;
+    padding-top: 10px;
+} */
+
+/* Nav */
+.logo-block {
+    display: flex;
+    justify-content: center;
+}
+
+#logo {
+    width: 200px;
+}
+
+.nav-item {
+    font-size: 28px;
+    line-height: 7px;
+    font-style: normal;
+    font-family: Ubuntu;
+    font-weight: 700;
+    overflow: hidden;
+    text-transform: uppercase;
+    height: 51px;
+    white-space: nowrap;
+
+    a {
+        // 
+
+        // Menu Underline Effect
+        &:hover {
+            color: black;
+            transition: 0.1s all ease;
+            border-bottom: 8px solid red;
+
+        }
+    }
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    line-height: 1;
+    color: white;
+    background-color: black;
+    padding-block: 20px;
+
+    p {
+        margin-block: 5px;
+        padding-inline: 20%;
+
+    }
+
+    img {
+        width: 150px;
+        position: absolute;
+        right: 40px;
+    }
+}
+
+
+@media(max-width: 960px) {}

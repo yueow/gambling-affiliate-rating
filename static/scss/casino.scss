@@ -1,0 +1,251 @@
+/* Styles for casino.html template */
+
+
+
+// Casino Header
+header {
+    padding: .8rem;
+    text-align: center;
+    margin-block: 0 3em;
+}
+
+// Casino Header Image
+.casino-header-image {
+    display: flex;
+    justify-content: center;
+
+    a {
+        img {
+            max-width: none;
+            max-height: none;
+            min-height: 0;
+            width: 400px;
+
+        }
+    }
+}
+
+// Casino Header Title
+.casino-header-title {
+    font-weight: 700;
+    font-size: 40px;
+}
+
+/* Marker */
+.marker {
+    color: white;
+    line-height: 0.7;
+    font-weight: 700;
+    font-size: 24px;
+    padding-block: 0.5rem;
+
+    text-transform: uppercase;
+    background-color: slateblue;
+
+    &:hover {
+        color: chartreuse;
+    }
+}
+
+/* Jackpot */
+.jackpot {
+    background-color: black;
+    padding: 20px;
+    margin-block: 10px;
+    width: 100%;
+    font-weight: 700;
+    color: white;
+
+    &:hover {
+        background-color: #00BC80;
+
+    }
+
+    a {
+        color: white;
+        font-weight: 700;
+
+        h2 {
+            text-transform: uppercase;
+            font-weight: 700;
+
+            span {
+                color: red;
+                font-size: 46px;
+                line-height: 49px;
+                letter-spacing: -0.053em;
+                font-weight: 700;
+
+            }
+        }
+
+    }
+}
+
+/* Affiliate Button */
+.affiliate-button {
+    color: white;
+    background-color: #3ae83a;
+    padding: 40px;
+    line-height: 0px;
+    font-size: 40px;
+    font-weight: 600;
+    border: 0;
+    text-align: center;
+    text-transform: uppercase;
+
+    width: 100%;
+
+    &:hover {
+        background-color: green;
+    }
+
+    &:link {
+        color: white;
+    }
+}
+
+/*  */
+
+
+/* Rating Table */
+table {
+    grid-area: rating;
+}
+.table {
+    padding: 20px;
+    height: 120px;
+    vertical-align: center;
+}
+td {
+    width: 30%;
+
+    a {
+        img {
+            width: 32px;
+        }
+    }
+
+    a:hover {
+        color: #00BC80 !important;
+    }
+
+}
+tr {
+    font-size: 24px;
+    line-height: 18px;
+    letter-spacing: -0.019em;
+    font-weight: 700;
+}
+
+
+// Description
+.description-section {
+    background-color: #F4F4F4;
+    padding: 2rem;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+.description-info {
+    color: grey;
+}
+p {
+    margin: 0;
+}
+
+
+// Pros&Cons
+.pros-block {
+    color: green;
+}
+
+.cons-block {
+    color: red;
+}
+.conspros-block {
+    padding: 2rem;
+    text-align: center;
+}
+
+
+// Jackpot Large
+.jackpot-large {
+    grid-area: jackpot;
+    text-align: center;
+
+    a {
+
+        h2 {
+            font-size: 3.3rem;
+            line-height: 1.5;
+            letter-spacing: -0.036em;
+            font-weight: 700;
+            color: whitesmoke;
+        }
+    }
+}
+/*  */
+
+
+// Casino Content
+.casino-content {
+    padding: 2.5rem;
+}
+
+
+// Bonuses Block
+.bonus-card {
+    width: 400px;
+    border: 0.1px solid grey;
+    border-radius: 25px;
+    padding: 20px 10px;
+    text-align: center;
+}
+.bonus-card-list {
+    display: flex;
+    justify-content: space-between;
+}
+.bonus-advertising {
+
+    h2 {
+        font-weight: 700;
+        padding: 30px;
+    }
+}
+.another-bonuses {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+
+// Payment Section
+.payment-block {
+    grid-area: payment;
+    background-color: #F4F4F4;
+    padding: 0px 20px;
+}
+.payment-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    a img {
+        max-width: none;
+        max-height: none;
+        min-height: 0;
+    }
+}
+// 
+
+
+
+@media (max-width: 968px) {
+    header {
+        width: 100%;
+    }
+    .table {
+        width: 100%;
+    }
+}

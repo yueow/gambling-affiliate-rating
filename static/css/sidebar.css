@@ -1,0 +1,62 @@
+.sidebar-wrapper {
+    margin-top: 3%;
+    padding: 3%;
+    min-width: 260px;
+}
+
+/* Sidebar Card */
+.sidebar-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+.sidebar-card-image {
+    order: 1;
+    flex-grow: 1;
+    min-width: 120px;
+    min-height: 100px;
+    width: 120px;
+    height: 100px;
+}
+.sidebar-card-body {
+    order: 2;
+    flex-grow: 2;
+}
+.sidebar-casino-rate {
+    color: green;
+    font-size: 24px;
+}
+.sidebar-casino-rate i {
+    font-size: 20px; 
+    color:#ffe500;
+}
+.sidebar-card-body p {
+    margin: 0px;
+    font-weight: 700;
+}
+.sidebar-card a:hover {
+    color: green;
+}
+.sidebar-card h5 {
+    margin: 0px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.header-rating-button {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* Add a new casino paragraph */
+.affiliate-feedback {
+    font-size: 14px;
+    font-weight: 700;
+}
+.affiliate-feedback a {
+    color: #0065ff;
+}
+.affiliate-feedback a:hover {
+    color: red;
+}

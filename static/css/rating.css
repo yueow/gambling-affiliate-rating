@@ -1,0 +1,121 @@
+/* Header */
+header {
+    padding-block: 3rem;
+    padding-inline: 10vw;
+    background-color: darkorange;
+    margin-bottom: 1rem;
+
+    font-weight: 700;
+    color: white;
+}
+header h1 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 48px;
+}
+
+/* Search Input */
+form {
+    flex-wrap: nowrap !important;
+    justify-content: center;
+}
+#search-field-text {
+    width: 500px !important;
+    border-radius: 0px;
+    border-start-start-radius: 50px !important;
+    border-end-start-radius: 50px !important;
+}
+#search-field-button {
+    border-radius: 0px;
+    border-start-end-radius: 50px !important;
+    border-end-end-radius: 50px !important;
+}
+
+
+/* Main */
+main {}
+
+/* Filtering Box */
+.filtering-box {
+    text-align: center;
+}
+.filtering-box a {
+    margin: 3px;
+    padding: 3px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* Rating Header */
+.rating-header h2 {
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.rating-header p {}
+
+
+/* Rating Card */
+.rating-card {
+    background-color: #FDFDFD;
+    margin-block: 30px;
+    border: solid 10px darkorange;
+    max-height: 600px;
+}
+.rating-card-review-button {
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rating-card-review-button a {
+    width: 200px;
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.rating-card-title {
+    font-weight: 700;
+}
+.rating-card-bonus {
+    padding-left: 2.4rem;
+}
+.rating-card-bonus p {
+    margin: 0;
+}
+.rating-card-bonus h2 {
+    color: #00BC80;
+    font-weight: 700;
+    font-size: 38px;
+}
+.rating-card-info {}
+.rating-card-info p {
+    margin-block: 0px;
+    padding-block: 0px;
+}
+
+/* Rating Card Stars */
+.rating-card-stars {
+    display: flex;
+}
+.rating-card-stars span {
+    font-weight: 700;
+}
+.rating-card-stars img {
+    width: 32px;
+}
+.rating-card-info-check {
+    color: #00BC80;
+    font-weight: 700;
+}
+/*  */
+
+
+@media (max-width: 1000px) {
+    .container {
+        width: 100%;
+        max-width: none;
+        padding-inline: 0px;
+    }
+
+}

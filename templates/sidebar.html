@@ -1,0 +1,47 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/sidebar.css' %}">
+
+<div class="col-md-4 float-right">
+
+    <div class="sidebar-wrapper card shadow">
+        <!-- Sidebar title -->
+        <div class="my-4">
+            <h5 class="text-center bg-transparent text-uppercase font-weight-bold">Top 10 online casinos</h5>
+
+            {% for casino in casinos %}
+            <!-- Sidebar Card -->
+            <div class="sidebar-card">
+
+                <!-- Sidebar Card Image -->
+                <div class="sidebar-card-image">
+                    <a href="#"><img src="{{ casino.image.url }}"
+                            alt="{{ casino.title }}"></a>
+                </div>
+
+                <!-- Sidebar Card Body -->
+                <div class="sidebar-card-body">
+                    <h5>{{ casino.title }}</h5>
+                    <p class="sidebar-casino-rate"><i class="fas fa-star"></i>
+                        {{ casino.rate }}/10</p>
+                    <a href="#" class="btn btn-success btn-lg">PLAY</a>
+                </div>
+            </div>
+            <hr>
+            {% endfor %}
+
+            <!-- Add a new casino -->
+            <p class="affiliate-feedback text-center">Wanna add a new casino? <a
+                    href="#">Add</a>
+            </p>
+
+            <hr>
+
+            <!-- Sidebar footer -->
+            <p>
+                <a href="{% url 'rating' %}"
+                    class="btn btn-success btn-block text-uppercase">See all</a>
+            </p>
+
+        </div>
+    </div>
+</div>

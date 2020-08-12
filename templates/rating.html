@@ -1,0 +1,163 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/rating.css'%}">
+{% endblock extra_css %}
+
+{% block content %}
+
+<!-- Header -->
+<header class="shadow text-center">
+    <h1>Online Casino Reviews & Ratings</h1>
+
+    <p>Playing casino games online can be a truly fabulous experience. It’s
+        better when you win, of course, but it can still be fun even when you
+        lose. It’s important, if not essential, that you use the best online
+        casinos when playing for real money.</p>
+
+    <!-- Search Input -->
+    <form class="form-inline">
+        <input id="search-field-text" name="q" value='{{ request.GET.q }}'
+            type="text" class="form-control"
+            placeholder="Casino, Country, License, Bonus Amount...">
+        <div class="input-group-append">
+            <button id="search-field-button" class="btn btn-success"
+                type="submit"><i class="fas fa-search"></i></button>
+        </div>
+    </form>
+    <!-- /Search Input -->
+</header>
+
+
+<!-- Main -->
+<main>
+    <div class="container">
+
+        <!-- Filtering Box -->
+        <div class="filtering-box">
+            <a href="?filter=top" class="btn btn-success btn-sm">Top</a>
+            <a href="?filter=new" class="btn btn-primary btn-sm">New</a>
+            <a href="?filter=onlylicense"
+                class="btn btn-secondary btn-sm">License</a>
+            <a href="?filter=script" class="btn btn-warning btn-sm">Script</a>
+
+            <a href="?filter=top_soft" class="btn btn-primary btn-sm">Best
+                software</a>
+            <a href="?filter=top_design" class="btn btn-dark btn-sm">Best
+                design</a>
+            <a href="?filter=top_safe" class="btn btn-info btn-sm">Trusted</a>
+            <a href="?filter=top_faith"
+                class="btn btn-warning btn-sm">Honest</a>
+            <a href="?filter=crypto" class="btn btn-danger btn-sm">Crypto</a>
+            <a href="?filter=scam" class="btn btn-danger btn-sm">Scam</a>
+            <a href="?filter=acceptcrypto" class="btn btn-dark btn-sm">Accept
+                crypto</a>
+            <a href="?filter=fastout"
+                class="btn btn-warning text-dark btn-sm">Fast
+                with</a>
+            <a href="?filter=nodocs" class="btn btn-primary btn-sm">No Docs</a>
+
+            <a href="?filter=topbonus" class="btn btn-success btn-sm">Juicy
+                bonuses</a>
+            <a href="?filter=bonusbunch" class="btn btn-info btn-sm">Many
+                bonuses</a>
+            <a href="?filter=nodep" class="btn btn-warning btn-sm">No Dep
+                bonuses</a>
+
+            <a href="?filter=jackpot" class="btn btn-danger btn-sm">Jackpots</a>
+        </div>
+        <!-- /Filtering Box -->
+
+        <hr>
+
+        <!-- Rating Header -->
+        <div class="text-center text-dark rating-header">
+            <h2>Best Casinos for your country</h2>
+            <p>Our listings contain the most trusted online casino reviews,
+                reviewed and rated by our experts, and sorted by our specialized
+                rating system</p>
+        </div>
+        <!-- /Rating Header -->
+
+
+        <!-- Rating Card -->
+        {% for casino in casinos %}
+        <div class="rating-card shadow">
+            <div class="row justify-content-md-center">
+                
+                <!-- Rating Card Image -->
+                <div class="col">
+                    <img class='rating-card-image' src="{{ casino.image.url }}"
+                        alt="{{ casino.title }}">
+                </div>
+
+                <!-- Rating Card Content -->
+                <div class="col">
+
+                    <!-- Rating Card Title -->
+                    <h3 class="rating-card-title"><a
+                            href="">{{ casino.title }}</a></h3>
+
+                    <!-- Rating Card Bonus -->
+                    <div class="rating-card-bonus">
+                        <!-- <a href="#"> -->
+                            <p>100% UP TO</p>
+                            <h2>$500</h2>
+                        <!-- </a> -->
+                    </div>
+                    <!-- /Rating Card Bonus -->
+
+                </div>
+                <!-- /Rating Card Content -->
+
+                <!-- Rating Card Rating -->
+                <div class="col">
+                    <div class="rating-card-stars">
+                        <span>5/5</span>
+                        <img src="{% static 'img/star.png' %}" alt="">
+                        <img src="{% static 'img/star.png' %}" alt="">
+                        <img src="{% static 'img/star.png' %}" alt="">
+                        <img src="{% static 'img/star.png' %}" alt="">
+                        <img src="{% static 'img/star.png' %}" alt="">
+                    </div>
+
+                    <div class="rating-card-info">
+                        <p>License <i
+                                class="fas fa-check rating-card-info-check"></i>
+                        </p>
+                        <p>Accept Crypto <i
+                                class="fas fa-check rating-card-info-check"></i>
+                        </p>
+                        <p>Min dep <span
+                                class='rating-card-info-check'>$10</span>
+                        </p>
+                        <p>Min with <span
+                                class='rating-card-info-check'>$50</span>
+                        </p>
+                        <p>Max with <span
+                                class='rating-card-info-check'>$10</span>
+                        </p>
+                    </div>
+                </div>
+                <!-- /Rating Card Rating -->
+
+                <!-- Rating Card Buttons -->
+                <div class="col">
+                    <div class='rating-card-review-button'><a
+                            href="{% url 'casino_detail' casino.slug %}"
+                            class="btn btn-success">Play</a></div>
+                    <div class='rating-card-review-button'><a
+                            href="{% url 'casino_detail' casino.slug %}"
+                            class="btn btn-primary">Review</a></div>
+                </div>
+                <!-- /Rating Card Buttons -->
+
+            </div>
+        </div>
+        {% endfor %}
+        <!-- /Listing -->
+
+    </div>
+</main>
+{% endblock %}
