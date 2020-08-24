@@ -25,7 +25,6 @@
     }
 }
 
-
 /* Main */
 #listing-heading {
     color: #E78200;
@@ -58,13 +57,20 @@
     text-transform: uppercase;
 
 }
+.card-down-comments a {
+    color: #E78200;
+    font-size: 16px;
+    margin: 0px;
+    line-height: 43px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
 
 /* Pagination */
 .pagination {
     display: flex;
     justify-content: center;
 }
-
 
 /* After Section */
 .after-con {
@@ -75,7 +81,6 @@
     font-family: "Ubuntu", sans-serif;
     font-size: 17px;
 }
-
 
 /* Info Section */
 .inf-block {

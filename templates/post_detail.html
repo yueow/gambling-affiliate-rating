@@ -12,23 +12,29 @@
                 <hr>
                 <!-- Post Meta -->
                 <div class="row">
-                    
+                    <div class="col card-header-meta">
+                        {% if post.reading_time %}
+                        {{ post.reading_time }}
+                        minute{{ post.reading_time|pluralize }}
+                        {% endif %}
+                    </div>
+
                     <div class="col">
                         {{ post.created_on|date:'d/m/Y H:i' }}
                     </div>
 
-                    <div class="col">
-                        <p class='font-weight-bold text-center'>5 minute to read</p>
-                    </div> 
-
-                    <div class="col">
-                        <p class='text-right'><a
-                                href="#">{{ post.author }}</a></p>
+                    <div class="col card-header-meta text-right">
+                        {{ post.author }}
                     </div>
 
+                    <!-- Like Button -->
+                    <div class='card-header-like-wrapper'>
+                        <span id='card-header-like-count'>{{ post.like_count }}</span><span data-href='{% url "blog:post_like" post.slug %}'
+                            id='card-header-like' data-post='{{ post.pk }}'></span>
+                        <!-- Like -->
+                    </div>
                 </div>
                 <!--  -->
-                <!-- <hr> -->
                 <!-- Post Content -->
                 <p class="card-text ">{{ post.content | safe }}</p>
 
@@ -38,7 +44,43 @@
         <!-- Sidebar -->
         {% include 'sidebar.html' %}
 
+        <!-- Disqus Comments -->
+        <div class="card shadow card-comments">
+            {% include 'comments.html' with slug=post.slug %}
+        </div>
+
     </div>
 </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.10.2/underscore-min.js" integrity="sha512-HKvDCFVKg8ZPGjecy6on7UECEpE76Y86h3GaE4JMCz+deFWdjcW/tWnh0hCfaBvURvlOa9f5CNVzt7EFkulYbw==" crossorigin="anonymous"></script>
 
+<script>
+    let debounced_post_like = _.debounce(post_like, 200)
+
+    document.getElementById('card-header-like').addEventListener('click', debounced_post_like)
+
+    function post_like() {
+        let like_post_url = document.getElementById('card-header-like').getAttribute('data-href');
+        let xhr = new XMLHttpRequest();
+
+        xhr.open('POST', like_post_url, true);
+        xhr.responseType = 'json';
+
+        xhr.send();
+        xhr.onload = function () {
+            if (this.status == 200) {
+                let result = this.response;
+
+                // Change Like Count
+                document.getElementById('card-header-like-count').innerText = result.like_count;
+
+                // console.log(result)
+                // console.log('works!');
+
+            }
+            else {
+                // console.log('Oops something got wrong !')
+            }
+        }
+    }
+</script>
 {% endblock content %}

@@ -230,7 +230,14 @@ class Casino(models.Model):
             return round(sum, 1)
 
 
+class TopCasino(models.Model):
+    # casino = ForeginKey
+    # sponsored
+    
+    # get_by_rating 
 
+
+    pass
 
 
 

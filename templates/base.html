@@ -14,7 +14,7 @@
     {% load static %}
 
     <!-- Icon -->
-    <link rel="icon" href="http://example.com/favicon.png">
+    <link rel="icon" href="{% static 'img/suit.svg' %}">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700"
@@ -43,12 +43,11 @@
 </head>
 
 <body>
-
     <!-- Nav -->
 
     <!-- Logo -->
     <div class='logo-block'>
-        <a href="{% url 'home' %}">
+        <a href="{% url 'blog:home' %}">
             <img id="logo" src="{% static 'img/poker-chip.svg' %}" alt="logo">
         </a>
     </div>
@@ -59,12 +58,12 @@
         <ul class="navbar-nav">
             <li class="nav-item">
                 <a class="nav-link text-black font-weight-bold"
-                    href="{% url 'rating' %}">
+                    href="{% url 'blog:rating' %}">
                     Casino rating</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link text-black font-weight-bold"
-                    href="{% url 'home' %}#fresh-posts">
+                    href="{% url 'blog:home' %}#fresh-posts">
                     Blog</a>
             </li>
             <li class="nav-item">
@@ -74,11 +73,6 @@
         </ul>
     </nav>
     <!--  -->
-
-    <!-- Adv block -->
-    <!-- <div class="adv">
-        <a href="#"><img class='adv-image' src="" alt="Adv Image"></a>        
-    </div> -->
 
     {% block adv_block %}{% endblock adv_block %}
     {% block content %}{% endblock content %}
@@ -131,8 +125,7 @@
 
 
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery, Popper.js, Bootstrap.js -->
+    <!-- JQuery, Popper, Bootstrap, Underscore -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -147,7 +140,6 @@
     
     {% block extra_js %}
     {% endblock extra_js %}
-
 </body>
 
 </html>

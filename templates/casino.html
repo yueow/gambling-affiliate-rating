@@ -1,6 +1,8 @@
 {% extends 'base.html' %}
 {% load static %}
 
+{% block title %}{{ casino.title }}{% endblock %}
+
 {% block extra_css %}
 <link rel="stylesheet" href="{% static 'scss/casino.css' %}">
 {% endblock extra_css %}

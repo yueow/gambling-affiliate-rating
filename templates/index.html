@@ -49,7 +49,7 @@
                 <a name="fresh-posts" href=""></a>
                 <h2 id="listing-heading">New Posts</h2>
 
-                {% for post in postQuery %}
+                {% for post in posts %}
                 <div class="card mb-4">
                     <div class="card-body">
                         <h2 class="card-title">{{ post.title }}</h2>
@@ -60,14 +60,20 @@
                             {{post.content|truncatechars_html:300|safe }}</p>
 
                         <div class="card-down">
-                            <!-- !Добавить model field минут на прочтение -->
                             <div>
-                                <p>3 minutes</p>
+                                {% if post.reading_time %}
+                                    <p>{{ post.reading_time }} minute{{ post.reading_time|pluralize }}</p>
+                                {% endif %}
+                            </div>
+                            
+                            <div class='card-down-comments'>
+                                <a href="{% url 'blog:post_detail' post.slug  %}#disqus_thread">No comments</a>
                             </div>
 
                             <div>
                                 <a class="btn btn-success btn-lg card-down-button"
-                                    href="{% url 'post_detail' post.slug  %}">Read</a>
+                                    href="{% url 'blog:post_detail' post.slug %}">Read</a>
+
                             </div>
                         </div>
 
@@ -78,33 +84,33 @@
                 <!-- Pagintaion  -->
                 <ul class="pagination">
 
-                    {% if postQuery.has_previous %}
+                    {% if posts.has_previous %}
 
                     <li class="page-item"><a class="page-link"
                             href="?page=1#listing-heading">&lt;&lt;</a></li>
                     <li class="page-item"><a class="page-link"
-                            href="?page={{ postQuery.previous_page_number }}#listing-heading">&lt;</a>
+                            href="?page={{ posts.previous_page_number }}#listing-heading">&lt;</a>
                     </li>
                     {% endif %}
 
-                    {% for num in postQuery.paginator.page_range %}
-                    {% if postQuery.number == num %}
+                    {% for num in posts.paginator.page_range %}
+                    {% if posts.number == num %}
                     <li class="page-item active"><a class="page-link"
                             href="?page={{ num }}#listing-heading">{{ num }}</a>
                     </li>
-                    {% elif num > postQuery.number|add:'-3' and num < postQuery.number|add:'3' %}
+                    {% elif num > posts.number|add:'-3' and num < posts.number|add:'3' %}
                     <li class="page-item"><a class="page-link"
                             href="?page={{ num }}#listing-heading">{{ num }}</a>
                     </li>
                     {% endif %}
                     {% endfor %}
 
-                    {% if postQuery.has_next %}
+                    {% if posts.has_next %}
                     <li class="page-item"><a class="page-link"
-                            href="?page={{ postQuery.next_page_number }}#listing-heading">&gt;</a>
+                            href="?page={{ posts.next_page_number }}#listing-heading">&gt;</a>
                     </li>
                     <li class="page-item"><a class="page-link"
-                            href="?page={{ postQuery.paginator.num_pages }}#listing-heading">&gt;&gt;</a>
+                            href="?page={{ posts.paginator.num_pages }}#listing-heading">&gt;&gt;</a>
                     </li>
                     {% endif %}
                 </ul>
@@ -194,4 +200,5 @@
 </section>
 <!--  -->
 
+<script id="dsq-count-scr" src="//bestcasinos-1.disqus.com/count.js" async></script>
 {% endblock %}

@@ -1,21 +1,18 @@
 from django.urls import path
-from . import views
+from blog import views
 
+app_name = "blog"
 
 
 urlpatterns = [
-    path('', views.postList, name='home'),
-    path('post/<slug:slug>/', views.postDetail, name='post_detail'),
+    path('', views.home_view, name='home'),
+    path('rating/', views.rating_view, name='rating'),
+    path('post/<slug:slug>/', views.post_detail_view, name='post_detail'),
+    path('casino/<slug:casino>/', views.casino_detail_view, name='casino_detail'),
 
-    path('about/', views.aboutView, name='about'),
-
-    # casinos
-    path('rating/', views.casinoRating, name='rating'),
-    path('casino/<slug:casino>/', views.casinoDetail, name='casino_detail'),
-
-
-
-
+    # AJAX Endpoints
+    path('post/<slug:slug>/like/', views.post_like, name='post_like'),
+    # path('post/<slug:slug>/liked/', views.post_liked, name='post_liked'),
+    # path('ajax/comment_like', views.comment_like, name='comment_like'),
+    # path('ajax/comment_dislike', views.comment_dislike, name='comment_dislike'),
 ]
-
-

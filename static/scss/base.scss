@@ -45,6 +45,26 @@ img {
     max-height: 100%;
 }
 
+// Post Comment Section
+.card-comments {
+    padding-block: 1rem;
+    padding-inline: 2rem;
+    min-width: 66%;
+    margin-bottom: 3rem;
+}
+
+.card-comment {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-comment-header>a img {
+    width: 100px;
+    max-width: 100px;
+    object-fit: contain;
+}
+
 // .justify-content-center {
 //     text-align: center;
 // }
