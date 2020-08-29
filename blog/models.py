@@ -1,3 +1,5 @@
+import logging
+
 from django.db import models
 from django.contrib.auth.models import User
 from django.utils.translation import ugettext as _
@@ -6,18 +8,21 @@ from django.conf import settings
 from autoslug import AutoSlugField
 
 
+logger = logging.getLogger(__name__)
+
+
 class Post(models.Model):
 
     STATUS = (
-        (0,"Draft"),
-        (1,"Publish")
+        (0, "Draft"),
+        (1, "Publish")
     )
 
     title = models.CharField(max_length=200, unique=True, verbose_name=_("Post Title"))
     slug = AutoSlugField(populate_from='title')
     author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='posts')
-    updated_on = models.DateTimeField(auto_now=True)
-    created_on = models.DateTimeField(auto_now_add=True)    
+    updated = models.DateTimeField(auto_now=True)
+    created = models.DateTimeField(auto_now_add=True)    
     content = models.TextField(max_length=10000)
     reading_time = models.PositiveSmallIntegerField(blank=True, null=True, verbose_name=_('Time for reading'))
     status = models.IntegerField(choices=STATUS, default=0)
@@ -26,7 +31,7 @@ class Post(models.Model):
     like_count = models.PositiveSmallIntegerField(default=0)
 
     class Meta:
-        ordering = ['-created_on']
+        ordering = ['-created']
 
     def __str__(self):
         return self.title
@@ -36,7 +41,7 @@ class Post(models.Model):
 
     @property
     def get_like_count(self):
-        return self.likeds
+        return self.liked
         
     # Post Like/Dislike method
     def like(self, request):
@@ -68,22 +73,20 @@ class Post(models.Model):
                 except:
                     pass
 
-                # print('Username In')
                 self.like_count -= 1
                 self.save()
                 status = False
 
             else:
                 session_liked_posts.append(self.id)
-                # print('Username Not In')
                 self.liked.add(request.user)
                 self.like_count += 1
                 self.save()
-                # print('Added')
                 status = True
 
         request.session['posts_liked'] = session_liked_posts
-        # print("Checking Request Session")
-        # print(request.session['posts_liked'])
+        
+        logger.debug("Checking Request Session")
+        logger.debug(f'{request.user.username}\'s session liked posts: {request.session["posts_liked"]}')
         
         return status

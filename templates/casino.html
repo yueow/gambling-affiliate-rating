@@ -82,82 +82,246 @@
         </div>
     </header>
 
+    <div class='row'>
+        <div class="col">
 
-    <!-- Rating Section -->
-    <table class="table table-hover shadow">
-        <tbody>
-            <a name="casino-rating" href=""></a>
-            <tr>
-                <td><a href="http://www.google.com">Main <i
-                            class="fas fa-crown"></i></a></td>
+            <!-- Rating Section -->
+            <form action="" method='post'>
+            {% csrf_token %}
+            <table class="table table-hover shadow">
+                <thead>
+                    <tr>
+                      <th scope="col">Rating({{ casino.get_rating_count }})</th>
+                      <th scope="col">First</th>
+                      <th scope="col">
+                          <button class='btn btn-success' type="submit">Vote</button>
+                      </th>
+                    </tr>
+                  </thead>
+                <tbody>
+                    <tr>
+                        <td>Main</td>
+                        <td class="table_rate">
+                            {{ casino.get_avg_main_rate }} 🌟
+                        </td>
 
-                <td class="table_rate"><a href="http://www.google.com">
-                        {{ casino.rate }} <img src="{% static 'img/star.png' %}"
-                            alt=""></a>
-                </td>
-                <td class="table_full_rate"><a href="http://www.google.com">
-                        {% for _ in casino.rate_range %}
-                        <img src="{% static 'img/star.png' %}" alt="">
-                        {% endfor %}</a>
-                </td>
-            </tr>
-            <tr>
-                <td><a href="#">Safe</a></td>
+                        <td class="table_full_rate">
+                            <div class="stars">
+                                <input class="star star-10" id="main-star-10"
+                                    type="radio" name="main_star" value="10" />
+                                <label class="star star-10"
+                                    for="main-star-10"></label>
+                                <input class="star star-9" id="main-star-9"
+                                    type="radio" name="main_star" value="9" />
+                                <label class="star star-5" for="main-star-9"></label>
+                                <input class="star star-8" id="main-star-8"
+                                    type="radio" name="main_star" value="8" />
+                                <label class="star star-8" for="main-star-8"></label>
+                                <input class="star star-7" id="main-star-7"
+                                    type="radio" name="main_star" value="7" />
+                                <label class="star star-7" for="main-star-7"></label>
+                                <input class="star star-6" id="main-star-6"
+                                    type="radio" name="main_star" value="6" />
+                                <label class="star star-6" for="main-star-6"></label>
+                                <input class="star star-5" id="main-star-5"
+                                    type="radio" name="main_star" value="5" />
+                                <label class="star star-5" for="main-star-5"></label>
+                                <input class="star star-4" id="main-star-4"
+                                    type="radio" name="main_star" value="4" />
+                                <label class="star star-4" for="main-star-4"></label>
+                                <input class="star star-3" id="main-star-3"
+                                    type="radio" name="main_star" value="3" />
+                                <label class="star star-3" for="main-star-3"></label>
+                                <input class="star star-2" id="main-star-2"
+                                    type="radio" name="main_star" value="2" />
+                                <label class="star star-2" for="main-star-2"></label>
+                                <input class="star star-1" id="main-star-1"
+                                    type="radio" name="main_star" value="1" />
+                                <label class="star star-1" for="main-star-1"></label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Safe</a></td>
 
-                <td class="table_rate"><a href="http://www.google.com">
-                        {{ casino.rate_safe }} <img
-                            src="{% static 'img/star.png' %}" alt="">
-                    </a></td>
-                <td class="table_full_rate"><a href="http://www.google.com">
-                        {% for _ in casino.rate_safe_range %}
-                        <img src="{% static 'img/star.png' %}" alt="">
-                        {% endfor %}</a>
-                </td>
-            </tr>
-            <tr>
-                <td><a href="#">Faith</a></td>
+                        <td class="table_rate">{{ casino.get_avg_safe_rate }} 🌟</td>
+                        <td class="table_full_rate">
+                            <div class="stars">
+                                <input class="star star-10" id="safe-star-10"
+                                    type="radio" name="safe_star" value="10" />
+                                <label class="star star-10"
+                                    for="safe-star-10"></label>
+                                <input class="star star-9" id="safe-star-9"
+                                    type="radio" name="safe_star" value="9" />
+                                <label class="star star-5" for="safe-star-9"></label>
+                                <input class="star star-8" id="safe-star-8"
+                                    type="radio" name="safe_star" value="8" />
+                                <label class="star star-8" for="safe-star-8"></label>
+                                <input class="star star-7" id="safe-star-7"
+                                    type="radio" name="safe_star" value="7" />
+                                <label class="star star-7" for="safe-star-7"></label>
+                                <input class="star star-6" id="safe-star-6"
+                                    type="radio" name="safe_star" value="6" />
+                                <label class="star star-6" for="safe-star-6"></label>
+                                <input class="star star-5" id="safe-star-5"
+                                    type="radio" name="safe_star" value="5" />
+                                <label class="star star-5" for="safe-star-5"></label>
+                                <input class="star star-4" id="safe-star-4"
+                                    type="radio" name="safe_star" value="4" />
+                                <label class="star star-4" for="safe-star-4"></label>
+                                <input class="star star-3" id="safe-star-3"
+                                    type="radio" name="safe_star" value="3" />
+                                <label class="star star-3" for="safe-star-3"></label>
+                                <input class="star star-2" id="safe-star-2"
+                                    type="radio" name="safe_star" value="2" />
+                                <label class="star star-2" for="safe-star-2"></label>
+                                <input class="star star-1" id="safe-star-1"
+                                    type="radio" name="safe_star" value="1" />
+                                <label class="star star-1" for="safe-star-1"></label>
+                            </div>
+                        </td>
+                    </tr>
 
-                <td class="table_rate"><a href="http://www.google.com">
-                        {{ casino.rate_faith }}
-                        <img src="{% static 'img/star.png' %}" alt="">
+                    <tr>
+                        <td>Faith</td>
+                        <td class="table_rate">{{ casino.get_avg_faith_rate }} 🌟</td>
+                        <td class="table_full_rate">
+                            <div class="stars">
+                                <input class="star star-10" id="faith-star-10"
+                                    type="radio" name="faith_star" value="10" />
+                                <label class="star star-10"
+                                    for="faith-star-10"></label>
+                                <input class="star star-9" id="faith-star-9"
+                                    type="radio" name="faith_star" value="9" />
+                                <label class="star star-5" for="faith-star-9"></label>
+                                <input class="star star-8" id="faith-star-8"
+                                    type="radio" name="faith_star" value="8" />
+                                <label class="star star-8" for="faith-star-8"></label>
+                                <input class="star star-7" id="faith-star-7"
+                                    type="radio" name="faith_star" value="7" />
+                                <label class="star star-7" for="faith-star-7"></label>
+                                <input class="star star-6" id="faith-star-6"
+                                    type="radio" name="faith_star" value="6" />
+                                <label class="star star-6" for="faith-star-6"></label>
+                                <input class="star star-5" id="faith-star-5"
+                                    type="radio" name="faith_star" value="5" />
+                                <label class="star star-5" for="faith-star-5"></label>
+                                <input class="star star-4" id="faith-star-4"
+                                    type="radio" name="faith_star" value="4" />
+                                <label class="star star-4" for="faith-star-4"></label>
+                                <input class="star star-3" id="faith-star-3"
+                                    type="radio" name="faith_star" value="3" />
+                                <label class="star star-3" for="faith-star-3"></label>
+                                <input class="star star-2" id="faith-star-2"
+                                    type="radio" name="faith_star" value="2" />
+                                <label class="star star-2" for="faith-star-2"></label>
+                                <input class="star star-1" id="faith-star-1"
+                                    type="radio" name="faith_star" value="1" />
+                                <label class="star star-1" for="faith-star-1"></label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Design</td>
 
-                    </a></td>
-                <td class="table_full_rate"><a href="http://www.google.com">
-                        {% for _ in casino.rate_faith_range %}
-                        <img src="{% static 'img/star.png' %}" alt="">
-                        {% endfor %}</a>
-                </td>
-            </tr>
-            <tr>
-                <td><a href="http://www.google.com">Design</a></td>
+                        <td class="table_rate">{{ casino.get_avg_design_rate }} 🌟</td>
+                        <td class="table_full_rate">
+                            <div class="stars">
+                                <input class="star star-10" id="design-star-10"
+                                    type="radio" name="design_star" value="10" />
+                                <label class="star star-10"
+                                    for="design-star-10"></label>
+                                <input class="star star-9" id="design-star-9"
+                                    type="radio" name="design_star" value="9" />
+                                <label class="star star-5" for="design-star-9"></label>
+                                <input class="star star-8" id="design-star-8"
+                                    type="radio" name="design_star" value="8" />
+                                <label class="star star-8" for="design-star-8"></label>
+                                <input class="star star-7" id="design-star-7"
+                                    type="radio" name="design_star" value="7" />
+                                <label class="star star-7" for="design-star-7"></label>
+                                <input class="star star-6" id="design-star-6"
+                                    type="radio" name="design_star" value="6" />
+                                <label class="star star-6" for="design-star-6"></label>
+                                <input class="star star-5" id="design-star-5"
+                                    type="radio" name="design_star" value="5" />
+                                <label class="star star-5" for="design-star-5"></label>
+                                <input class="star star-4" id="design-star-4"
+                                    type="radio" name="design_star" value="4" />
+                                <label class="star star-4" for="design-star-4"></label>
+                                <input class="star star-3" id="design-star-3"
+                                    type="radio" name="design_star" value="3" />
+                                <label class="star star-3" for="design-star-3"></label>
+                                <input class="star star-2" id="design-star-2"
+                                    type="radio" name="design_star" value="2" />
+                                <label class="star star-2" for="design-star-2"></label>
+                                <input class="star star-1" id="design-star-1"
+                                    type="radio" name="design_star" value="1" />
+                                <label class="star star-1" for="design-star-1"></label>
+                            </div>
+                        </td>
+                    </tr>
 
-                <td class="table_rate"><a href="http://www.google.com">
-                        {{ casino.rate_design }}
-                        <img src="{% static 'img/star.png' %}" alt="">
-                    </a></td>
-                <td class="table_full_rate"><a href="http://www.google.com">
-                        {% for _ in casino.rate_design_range %}
-                        <img src="{% static 'img/star.png' %}" alt="">
-                        {% endfor %}</a>
-                </td>
-            </tr>
-            <tr>
-                <td><a href="http://www.google.com">Software</a></td>
 
-                <td class="table_rate"><a href="http://www.google.com">
-                        {{ casino.rate_soft }}
-                        <img src="{% static 'img/star.png' %}" alt="">
-                    </a></td>
-                <td class="table_full_rate"><a href="http://www.google.com">
-                        {% for _ in casino.rate_soft_range %}
-                        <img src="{% static 'img/star.png' %}" alt="">
-                        {% endfor %}</a>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <!-- /Rating Section -->
+                    <tr>
+                        <td>Software</td>
 
+                        <td class="table_rate">{{ casino.get_avg_soft_rate }} 🌟</td>
+                        <td class="table_full_rate">
+                            <div class="stars">
+                                <form action="">
+                                    <input class="star star-10" id="software-star-10"
+                                        type="radio" name="software_star" value="10" />
+                                    <label class="star star-10"
+                                        for="software-star-10"></label>
+                                    <input class="star star-9" id="software-star-9"
+                                        type="radio" name="software_star" value="9" />
+                                    <label class="star star-5"
+                                        for="software-star-9"></label>
+                                    <input class="star star-8" id="software-star-8"
+                                        type="radio" name="software_star" value="8" />
+                                    <label class="star star-8"
+                                        for="software-star-8"></label>
+                                    <input class="star star-7" id="software-star-7"
+                                        type="radio" name="software_star" value="7" />
+                                    <label class="star star-7"
+                                        for="software-star-7"></label>
+                                    <input class="star star-6" id="software-star-6"
+                                        type="radio" name="software_star" value="6" />
+                                    <label class="star star-6"
+                                        for="software-star-6"></label>
+                                    <input class="star star-5" id="software-star-5"
+                                        type="radio" name="software_star" value="5" />
+                                    <label class="star star-5"
+                                        for="software-star-5"></label>
+                                    <input class="star star-4" id="software-star-4"
+                                        type="radio" name="software_star" value="4" />
+                                    <label class="star star-4"
+                                        for="software-star-4"></label>
+                                    <input checked class="star star-3" id="software-star-3"
+                                        type="radio" name="software_star" value="3" />
+                                    <label class="star star-3"
+                                        for="software-star-3"></label>
+                                    <input class="star star-2" id="software-star-2"
+                                        type="radio" name="software_star" value="2" />
+                                    <label class="star star-2"
+                                        for="software-star-2"></label>
+                                    <input class="star star-1" id="software-star-1"
+                                        type="radio" name="software_star" value="1" />
+                                    <label class="star star-1"
+                                        for="software-star-1"></label>
+                                </form>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+
+            <!-- /Rating Section -->
+        <!-- </div> -->
+        </div>
+    </div>
 
     <!-- Description -->
     <div class="row description-section shadow">
@@ -181,7 +345,7 @@
                 </li>
                 <li>
                     <p><i class="fas fa-money-bill-wave-alt"></i> Accept crypto:
-                        {{ casino.acceptCrypto|yesno:"Yes,No" }}</p>
+                        {{ casino.does_accept_crypto|yesno:"Yes,No" }}</p>
                 </li>
 
                 <!-- Withdrwal section -->
@@ -295,13 +459,13 @@
     <!--  -->
 
 
-    <!-- Pros&Cons Block -->
+    <!-- Pros and Cons  -->
     <div class="row conspros-block">
         <div class="col pros-block">
             <h3><i class="fas fa-plus-circle"></i> Pros</h3>
             <ul>
-                {% for i in casino.pros_as_list %}
-                <li><i class="fas fa-plus"></i> {{ i }}</li>
+                {% for pros in casino.get_pros %}
+                <li><i class="fas fa-plus"></i> {{ pros.name }}</li>
                 {% endfor %}
             </ul>
 
@@ -309,8 +473,8 @@
         <div class="col cons-block">
             <h3><i class="fas fa-minus-circle"></i> Cons</h3>
             <ul>
-                {% for i in casino.cons_as_list %}
-                <li><i class="fas fa-minus"></i> {{ i }}</li>
+                {% for cons in casino.get_cons %}
+                <li><i class="fas fa-minus"></i> {{ cons.name }}</li>
                 {% endfor %}
             </ul>
 
@@ -344,8 +508,7 @@
         <div class="payment-content">
 
             {% for pm in casino.get_payments %}
-            <a href=""><img width="{{pm.image_wd}}" height="{{pm.image_hg}}"
-                    src="{{ pm.image.url }}" alt="{{ pm.name }}"></a>
+            <a href=""><img src="{{ pm.image.url }}" alt="{{ pm.name }}"></a>
             {% endfor %}
 
         </div>
@@ -401,17 +564,24 @@
 
 
         <!-- Another Bonuses  -->
-        <div class="another-bonuses text-center">
+        <!-- <div class="another-bonuses text-center">
             <a href="">
                 <h2>Check Out All Bonuses For The Casino</h2>
                 <p><i class="fas fa-chevron-down"></i></p>
             </a>
-        </div>
+        </div> -->
         <!--  -->
 
 
     </div>
     <!-- /Bonus block -->
+    
+    <!-- Disqus Comments -->
+    <div class="card shadow card-comments">
+        {% include 'comments.html' with slug=post.slug %}
+    </div>
+    <!--  -->
 
 </div>
+
 {% endblock %}

@@ -76,9 +76,10 @@ main {}
 }
 .rating-card-title {
     font-weight: 700;
+    text-align: center;
 }
 .rating-card-bonus {
-    padding-left: 2.4rem;
+    text-align: center;
 }
 .rating-card-bonus p {
     margin: 0;
@@ -97,6 +98,9 @@ main {}
 /* Rating Card Stars */
 .rating-card-stars {
     display: flex;
+    font-weight: 700;
+    font-size: 30px;
+    color: #00BC80;
 }
 .rating-card-stars span {
     font-weight: 700;

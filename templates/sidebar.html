@@ -14,16 +14,15 @@
 
                 <!-- Sidebar Card Image -->
                 <div class="sidebar-card-image">
-                    <a href="#"><img src="{{ casino.image.url }}"
+                    <a href="{% url 'blog:casino_detail' casino.slug %}"><img src="{{ casino.image.url }}"
                             alt="{{ casino.title }}"></a>
                 </div>
 
                 <!-- Sidebar Card Body -->
                 <div class="sidebar-card-body">
                     <h5>{{ casino.title }}</h5>
-                    <p class="sidebar-casino-rate"><i class="fas fa-star"></i>
-                        {{ casino.rate }}/10</p>
-                    <a href="#" class="btn btn-success btn-lg">PLAY</a>
+                    <p class="sidebar-casino-rate">{{ casino.get_avg_main_rate }} 🌟</p>
+                    <a href="{{ casino.link }}" class="btn btn-success btn-lg">PLAY</a>
                 </div>
             </div>
             <hr>

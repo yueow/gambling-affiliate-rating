@@ -13,9 +13,6 @@ TEMPLATE_DIR = os.path.join(BASE_DIR,"templates")
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '+#+(!qz16=k7se8!gmy8d3u9@7&1p75!ib6&6@af@%p4$kh!qg'
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
 #DO NOT USE '*' FOR PRODUCTION
 ALLOWED_HOSTS = ['*']
 
@@ -72,13 +69,24 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#     }
+# }
+
+
+DATABASE_CONF_PATH = os.path.join(os.path.join(BASE_DIR, 'mysite'), 'db.conf')
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'OPTIONS': {
+            'read_default_file': DATABASE_CONF_PATH,
+        },
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
@@ -126,7 +134,11 @@ logging.config.dictConfig({
     'loggers': {
     # root logger
         '': {
-            'level': 'DEBUG',
+            'level': 'WARNING',
+            'handlers': ['console'],
+        },
+        'blog': {
+            'level': 'INFO',
             'handlers': ['console'],
         },
     },
@@ -160,9 +172,7 @@ STATICFILES_DIRS = [
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-
 X_FRAME_OPTIONS = 'SAMEORIGIN'
-# DATE, DATETIME INPUT FORMATING
 
 # DATE_INPUT_FORMATS = ['%d/%m/%y',]
 # DATETIME_INPUT_FORMATS = ['%d/%m/%Y %H:%M',]
@@ -170,5 +180,5 @@ X_FRAME_OPTIONS = 'SAMEORIGIN'
 AUTH_USER_MODEL = 'auth.User'
 SITE_ID = 1
 
-# DISQUS_WEBSITE_SHORTNAME = 'bestcasinos'
-# DISQUS_API_KEY = 'FOOBARFOOBARFOOBARFOOBARFOOBARF'
+# SECURITY WARNING: don't run with debug turned on in production!
+DEBUG = True

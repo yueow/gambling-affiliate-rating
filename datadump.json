@@ -1,0 +1,2389 @@
+[
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2019-09-09T23:27:34.964Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "First page title",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2019-09-09T23:27:53.429Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "First page title",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2019-09-10T15:32:19.034Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "Как я покупал   пивас",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2019-09-10T15:32:43.011Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "Незаконченная рабоат",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2019-09-10T15:33:05.955Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "Тестовый пост",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2019-09-10T17:50:56.519Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "Тестовый пост",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"content\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2019-09-10T17:51:38.448Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "Незаконченная рабоат",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"content\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2019-09-11T02:25:45.294Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "Тестовый пост",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"content\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2019-09-11T02:27:16.769Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "Тестовый пост",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"content\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2019-09-11T02:28:15.389Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "Тестовый пост",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"content\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2019-09-12T19:00:48.271Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "5",
+    "object_repr": "SUPER MEGA TITLE",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2019-09-12T19:01:12.796Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "5",
+    "object_repr": "SUPER MEGA TITLE",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2019-09-14T14:59:03.330Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "Test casino One",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2019-09-14T20:10:42.428Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "Test casino One",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2019-09-15T03:11:15.439Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "6",
+    "object_repr": "Как выбрать правильное казино?",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2019-09-15T03:14:14.256Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "Тестовый пост",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"content\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2019-09-22T05:24:12.722Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "7",
+    "object_repr": "Проверка работы гифки",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2019-10-05T10:13:03.964Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "Payment object (1)",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2019-10-05T11:07:20.260Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "1",
+    "object_repr": "TTR Casino",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2019-10-05T11:09:12.275Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "1",
+    "object_repr": "TTR Casino",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"jackpot\", \"min_output\", \"max_output\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2019-10-05T11:09:25.435Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "1",
+    "object_repr": "TTR Casino",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2019-10-05T11:10:01.459Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "Payment object (1)",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"casino\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2019-10-05T11:10:22.654Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "Payment object (1)",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2019-10-05T11:25:22.883Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "2",
+    "object_repr": "Payment object (2)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2019-10-05T11:25:57.382Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "3",
+    "object_repr": "Payment object (3)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2019-10-05T11:26:20.425Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "4",
+    "object_repr": "Payment object (4)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 27,
+  "fields": {
+    "action_time": "2019-10-05T11:27:04.268Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "5",
+    "object_repr": "Payment object (5)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 28,
+  "fields": {
+    "action_time": "2019-10-05T11:27:26.288Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "6",
+    "object_repr": "Payment object (6)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 29,
+  "fields": {
+    "action_time": "2019-10-05T11:29:05.601Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "7",
+    "object_repr": "Payment object (7)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 30,
+  "fields": {
+    "action_time": "2019-10-05T11:29:19.501Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "8",
+    "object_repr": "Payment object (8)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 31,
+  "fields": {
+    "action_time": "2019-10-05T11:31:11.216Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "9",
+    "object_repr": "Payment object (9)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 32,
+  "fields": {
+    "action_time": "2019-10-10T17:53:09.418Z",
+    "user": 1,
+    "content_type": 15,
+    "object_id": "1",
+    "object_repr": "Game object (1)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 33,
+  "fields": {
+    "action_time": "2019-10-10T17:55:11.694Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "1",
+    "object_repr": "Software object (1)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 34,
+  "fields": {
+    "action_time": "2019-10-11T05:40:23.738Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "8",
+    "object_repr": "ПРоверка дейттайма",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 35,
+  "fields": {
+    "action_time": "2019-10-11T08:52:06.984Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "9",
+    "object_repr": "gnlsdsdkngsdgsdg",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 36,
+  "fields": {
+    "action_time": "2019-10-12T09:58:51.734Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "9",
+    "object_repr": "gnlsdsdkngsdgsdg",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"time_for_reading\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 37,
+  "fields": {
+    "action_time": "2019-10-12T20:43:38.433Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "1",
+    "object_repr": "TTR Casino",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"banned_countries\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 38,
+  "fields": {
+    "action_time": "2019-10-12T21:05:56.788Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "1",
+    "object_repr": "TTR Casino",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"crypto\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 39,
+  "fields": {
+    "action_time": "2019-10-13T14:22:13.872Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "1",
+    "object_repr": "TTR Casino",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"scam\", \"content\", \"pros_c\", \"cons_c\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 40,
+  "fields": {
+    "action_time": "2019-10-13T14:26:02.056Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "1",
+    "object_repr": "TTR Casino",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"pros_c\", \"cons_c\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 41,
+  "fields": {
+    "action_time": "2019-10-13T14:28:10.315Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "1",
+    "object_repr": "TTR Casino",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"content\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 42,
+  "fields": {
+    "action_time": "2019-10-14T14:48:11.357Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "1",
+    "object_repr": "TTR Casino",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"ca_license\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 43,
+  "fields": {
+    "action_time": "2019-10-14T14:53:19.746Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "1",
+    "object_repr": "TTR Casino",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"cashback\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 44,
+  "fields": {
+    "action_time": "2019-10-15T10:35:52.591Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "1",
+    "object_repr": "TTR Casino",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"script\", \"max_output\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 45,
+  "fields": {
+    "action_time": "2019-10-15T10:36:12.308Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "1",
+    "object_repr": "TTR Casino",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"crypto\", \"scam\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 46,
+  "fields": {
+    "action_time": "2019-10-15T10:50:06.291Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "1",
+    "object_repr": "TTR Casino",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"crypto\", \"scam\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 47,
+  "fields": {
+    "action_time": "2019-10-15T12:18:23.362Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "1",
+    "object_repr": "TTR Casino",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"rate\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 48,
+  "fields": {
+    "action_time": "2019-10-15T12:25:25.163Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "1",
+    "object_repr": "TTR Casino",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"rate\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 49,
+  "fields": {
+    "action_time": "2019-10-16T11:44:30.093Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "5",
+    "object_repr": "Payment object (5)",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"casino\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 50,
+  "fields": {
+    "action_time": "2019-10-16T11:44:47.696Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "3",
+    "object_repr": "Payment object (3)",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"casino\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 51,
+  "fields": {
+    "action_time": "2019-10-16T11:44:55.316Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "2",
+    "object_repr": "Payment object (2)",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"casino\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 52,
+  "fields": {
+    "action_time": "2019-10-16T13:42:05.208Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "Payment object (1)",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"image_wd\", \"image_hg\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 53,
+  "fields": {
+    "action_time": "2019-10-16T13:42:24.643Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "2",
+    "object_repr": "Payment object (2)",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 54,
+  "fields": {
+    "action_time": "2019-10-16T13:42:40.518Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "3",
+    "object_repr": "Payment object (3)",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"image_hg\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 55,
+  "fields": {
+    "action_time": "2019-10-16T13:50:41.018Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "5",
+    "object_repr": "Payment object (5)",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"image_wd\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 56,
+  "fields": {
+    "action_time": "2019-10-16T13:51:14.305Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "4",
+    "object_repr": "Payment object (4)",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"image_wd\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 57,
+  "fields": {
+    "action_time": "2019-10-16T13:51:51.996Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "6",
+    "object_repr": "Payment object (6)",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"image_wd\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 58,
+  "fields": {
+    "action_time": "2019-10-16T13:52:24.960Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "7",
+    "object_repr": "Payment object (7)",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"image_wd\", \"image_hg\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 59,
+  "fields": {
+    "action_time": "2019-10-16T13:53:56.880Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "8",
+    "object_repr": "Payment object (8)",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"image_hg\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 60,
+  "fields": {
+    "action_time": "2019-10-16T13:54:20.822Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "9",
+    "object_repr": "Payment object (9)",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"image_wd\", \"image_hg\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 61,
+  "fields": {
+    "action_time": "2019-10-16T14:08:42.460Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "1",
+    "object_repr": "Bonus object (1)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 62,
+  "fields": {
+    "action_time": "2019-10-16T22:12:09.479Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "1",
+    "object_repr": "Bonus object (1)",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 63,
+  "fields": {
+    "action_time": "2019-10-16T22:13:02.279Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "2",
+    "object_repr": "Bonus object (2)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 64,
+  "fields": {
+    "action_time": "2019-10-19T13:29:30.450Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "3",
+    "object_repr": "20 000$ за депозит",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 65,
+  "fields": {
+    "action_time": "2019-10-19T18:43:09.362Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "1",
+    "object_repr": "TTR Casino",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"ca_license\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 66,
+  "fields": {
+    "action_time": "2019-10-21T14:23:15.011Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "2",
+    "object_repr": "Вулкан",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 67,
+  "fields": {
+    "action_time": "2019-10-21T14:24:10.686Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "2",
+    "object_repr": "Вулкан",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 68,
+  "fields": {
+    "action_time": "2019-10-21T14:32:00.930Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "1",
+    "object_repr": "TTR Casino",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 69,
+  "fields": {
+    "action_time": "2019-10-21T21:59:13.498Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "2",
+    "object_repr": "Вулкан",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"dol\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 70,
+  "fields": {
+    "action_time": "2019-10-23T04:46:14.665Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "4",
+    "object_repr": "Тестовый бездопезитный бонус на 100к",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 71,
+  "fields": {
+    "action_time": "2019-10-23T06:34:55.822Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "2",
+    "object_repr": "Вулкан",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"jackpot_bool\", \"jackpot_value\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 72,
+  "fields": {
+    "action_time": "2020-06-04T14:18:16.286Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "2",
+    "object_repr": "Vulkan-test",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\", \"Cryptocasino?\", \"Scam?\", \"Short description\", \"Pros\", \"Cons\", \"Casino wants docs to withdrawal?\", \"How easy to withdrawal(\\u041b\\u0435\\u0433\\u043a\\u043e, \\u0421\\u0440\\u0435\\u0434\\u043d\\u0435, \\u0421\\u043b\\u043e\\u0436\\u043d\\u043e, \\u0421\\u0443\\u043f\\u0435\\u0440\\u0441\\u043b\\u043e\\u0436\\u043d\\u043e)\", \"Witdrawal frequency(d,w)\", \"Support grade\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 73,
+  "fields": {
+    "action_time": "2020-06-04T14:18:42.247Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "4",
+    "object_repr": "Тестовый бездопезитный бонус на 100к",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 74,
+  "fields": {
+    "action_time": "2020-06-04T14:18:42.420Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "3",
+    "object_repr": "20 000$ за депозит",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 75,
+  "fields": {
+    "action_time": "2020-06-04T14:18:42.575Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "2",
+    "object_repr": "Тестовый депозитный бонус",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 76,
+  "fields": {
+    "action_time": "2020-06-04T14:18:42.701Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "1",
+    "object_repr": "100$ каждому второму за регистрацию",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 77,
+  "fields": {
+    "action_time": "2020-06-04T20:11:34.928Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "10",
+    "object_repr": "Title1",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 78,
+  "fields": {
+    "action_time": "2020-06-04T20:12:14.426Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "2",
+    "object_repr": "Vulkan-test",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Content\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 79,
+  "fields": {
+    "action_time": "2020-06-04T20:35:10.779Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "10",
+    "object_repr": "Title1",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 80,
+  "fields": {
+    "action_time": "2020-06-04T20:35:40.807Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "9",
+    "object_repr": "gnlsdsdkngsdgsdg",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 81,
+  "fields": {
+    "action_time": "2020-06-04T20:35:40.953Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "8",
+    "object_repr": "ПРоверка дейттайма",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 82,
+  "fields": {
+    "action_time": "2020-06-04T20:35:41.085Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "6",
+    "object_repr": "Как выбрать правильное казино?",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 83,
+  "fields": {
+    "action_time": "2020-06-04T20:36:08.924Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "7",
+    "object_repr": "Test2",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Post title\", \"Time for reading('2 \\u043c\\u0438\\u043d\\u0443\\u0442\\u044b')\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 84,
+  "fields": {
+    "action_time": "2020-06-11T12:14:26.751Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "2",
+    "object_repr": "Vulkan-Casino",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\", \"License\", \"Banned players from ...\", \"Short description\", \"Content\", \"Jackpot value\", \"Min Output\", \"Max Output\", \"Cashback Y/N\", \"Customer support grade\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 85,
+  "fields": {
+    "action_time": "2020-06-11T15:29:53.728Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "2",
+    "object_repr": "Vulkan-Casino",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Banned players from ...\", \"Content\", \"Pros\", \"Cons\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 86,
+  "fields": {
+    "action_time": "2020-06-11T15:38:10.561Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "11",
+    "object_repr": "Top legal betting sites in the USA you need to play at!",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 87,
+  "fields": {
+    "action_time": "2020-06-11T15:40:23.561Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "10",
+    "object_repr": "Everything You Need to Know About the Expendables Slot Online",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Post title\", \"Content\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 88,
+  "fields": {
+    "action_time": "2020-08-13T01:33:26.446Z",
+    "user": 1,
+    "content_type": 17,
+    "object_id": "1",
+    "object_repr": "1[11] by 1",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 89,
+  "fields": {
+    "action_time": "2020-08-13T01:38:34.124Z",
+    "user": 1,
+    "content_type": 18,
+    "object_id": "1",
+    "object_repr": "L/admin/1[11] by 1",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 90,
+  "fields": {
+    "action_time": "2020-08-13T01:43:05.875Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "2",
+    "object_repr": "user",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 91,
+  "fields": {
+    "action_time": "2020-08-13T01:45:56.910Z",
+    "user": 1,
+    "content_type": 18,
+    "object_id": "2",
+    "object_repr": "L/auth.User.None/blog.Comment.None",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 92,
+  "fields": {
+    "action_time": "2020-08-13T02:04:50.096Z",
+    "user": 1,
+    "content_type": 18,
+    "object_id": "2",
+    "object_repr": "L/admin/1[11] by 1",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Author\", \"Comment\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 93,
+  "fields": {
+    "action_time": "2020-08-13T02:05:00.285Z",
+    "user": 1,
+    "content_type": 18,
+    "object_id": "1",
+    "object_repr": "L/admin/1[11] by 1",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Author\", \"Comment\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 94,
+  "fields": {
+    "action_time": "2020-08-13T02:21:05.417Z",
+    "user": 1,
+    "content_type": 18,
+    "object_id": "2",
+    "object_repr": "L/admin/1[11] by 1",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 95,
+  "fields": {
+    "action_time": "2020-08-13T02:21:05.588Z",
+    "user": 1,
+    "content_type": 18,
+    "object_id": "1",
+    "object_repr": "L/admin/1[11] by 1",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 96,
+  "fields": {
+    "action_time": "2020-08-13T03:32:20.211Z",
+    "user": 1,
+    "content_type": 18,
+    "object_id": "1",
+    "object_repr": "L/admin/1[11] by 1",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 97,
+  "fields": {
+    "action_time": "2020-08-13T03:32:36.142Z",
+    "user": 1,
+    "content_type": 18,
+    "object_id": "1",
+    "object_repr": "D/admin/1[11] by 1",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Rate\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 98,
+  "fields": {
+    "action_time": "2020-08-13T03:32:46.691Z",
+    "user": 1,
+    "content_type": 18,
+    "object_id": "None",
+    "object_repr": "L/admin/1[11] by 1",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 99,
+  "fields": {
+    "action_time": "2020-08-13T03:33:10.166Z",
+    "user": 1,
+    "content_type": 18,
+    "object_id": "None",
+    "object_repr": "D/admin/1[11] by 1",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 100,
+  "fields": {
+    "action_time": "2020-08-13T03:38:35.335Z",
+    "user": 1,
+    "content_type": 18,
+    "object_id": "2",
+    "object_repr": "D/admin/1[11] by 1",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 101,
+  "fields": {
+    "action_time": "2020-08-13T03:38:49.188Z",
+    "user": 1,
+    "content_type": 18,
+    "object_id": "2",
+    "object_repr": "L/user/1[11] by 1",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Author\", \"Rate\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 102,
+  "fields": {
+    "action_time": "2020-08-13T03:39:16.163Z",
+    "user": 1,
+    "content_type": 18,
+    "object_id": "3",
+    "object_repr": "L/admin/1[11] by 1",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 103,
+  "fields": {
+    "action_time": "2020-08-13T03:39:29.745Z",
+    "user": 1,
+    "content_type": 18,
+    "object_id": "4",
+    "object_repr": "D/admin/1[11] by 1",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 104,
+  "fields": {
+    "action_time": "2020-08-13T03:40:12.578Z",
+    "user": 1,
+    "content_type": 17,
+    "object_id": "2",
+    "object_repr": "2[11] by 2",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 105,
+  "fields": {
+    "action_time": "2020-08-13T06:11:58.968Z",
+    "user": 1,
+    "content_type": 17,
+    "object_id": "1",
+    "object_repr": "1[11] by 1",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Text\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 106,
+  "fields": {
+    "action_time": "2020-08-20T22:35:11.114Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "11",
+    "object_repr": "Top legal betting sites in the USA you need to play at!",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Time for reading\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 107,
+  "fields": {
+    "action_time": "2020-08-20T22:35:20.927Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "10",
+    "object_repr": "Everything You Need to Know About the Expendables Slot Online",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Time for reading\"]}}]"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 2,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 3,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 4,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 4,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 4,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 4,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 5,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 5,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 5,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 5,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 6,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 6,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 6,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 6,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add post",
+    "content_type": 7,
+    "codename": "add_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change post",
+    "content_type": 7,
+    "codename": "change_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete post",
+    "content_type": 7,
+    "codename": "delete_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view post",
+    "content_type": 7,
+    "codename": "view_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add attachment",
+    "content_type": 8,
+    "codename": "add_attachment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change attachment",
+    "content_type": 8,
+    "codename": "change_attachment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete attachment",
+    "content_type": 8,
+    "codename": "delete_attachment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view attachment",
+    "content_type": 8,
+    "codename": "view_attachment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add casino",
+    "content_type": 9,
+    "codename": "add_casino"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change casino",
+    "content_type": 9,
+    "codename": "change_casino"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete casino",
+    "content_type": 9,
+    "codename": "delete_casino"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view casino",
+    "content_type": 9,
+    "codename": "view_casino"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can add payment",
+    "content_type": 10,
+    "codename": "add_payment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can change payment",
+    "content_type": 10,
+    "codename": "change_payment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can delete payment",
+    "content_type": 10,
+    "codename": "delete_payment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can view payment",
+    "content_type": 10,
+    "codename": "view_payment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 41,
+  "fields": {
+    "name": "Can add casino",
+    "content_type": 11,
+    "codename": "add_casino"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 42,
+  "fields": {
+    "name": "Can change casino",
+    "content_type": 11,
+    "codename": "change_casino"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 43,
+  "fields": {
+    "name": "Can delete casino",
+    "content_type": 11,
+    "codename": "delete_casino"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 44,
+  "fields": {
+    "name": "Can view casino",
+    "content_type": 11,
+    "codename": "view_casino"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 45,
+  "fields": {
+    "name": "Can add bonus",
+    "content_type": 12,
+    "codename": "add_bonus"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 46,
+  "fields": {
+    "name": "Can change bonus",
+    "content_type": 12,
+    "codename": "change_bonus"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 47,
+  "fields": {
+    "name": "Can delete bonus",
+    "content_type": 12,
+    "codename": "delete_bonus"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 48,
+  "fields": {
+    "name": "Can view bonus",
+    "content_type": 12,
+    "codename": "view_bonus"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 49,
+  "fields": {
+    "name": "Can add license",
+    "content_type": 13,
+    "codename": "add_license"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 50,
+  "fields": {
+    "name": "Can change license",
+    "content_type": 13,
+    "codename": "change_license"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 51,
+  "fields": {
+    "name": "Can delete license",
+    "content_type": 13,
+    "codename": "delete_license"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 52,
+  "fields": {
+    "name": "Can view license",
+    "content_type": 13,
+    "codename": "view_license"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 53,
+  "fields": {
+    "name": "Can add software",
+    "content_type": 14,
+    "codename": "add_software"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 54,
+  "fields": {
+    "name": "Can change software",
+    "content_type": 14,
+    "codename": "change_software"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 55,
+  "fields": {
+    "name": "Can delete software",
+    "content_type": 14,
+    "codename": "delete_software"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 56,
+  "fields": {
+    "name": "Can view software",
+    "content_type": 14,
+    "codename": "view_software"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 57,
+  "fields": {
+    "name": "Can add game",
+    "content_type": 15,
+    "codename": "add_game"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 58,
+  "fields": {
+    "name": "Can change game",
+    "content_type": 15,
+    "codename": "change_game"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 59,
+  "fields": {
+    "name": "Can delete game",
+    "content_type": 15,
+    "codename": "delete_game"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 60,
+  "fields": {
+    "name": "Can view game",
+    "content_type": 15,
+    "codename": "view_game"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 61,
+  "fields": {
+    "name": "Can add service",
+    "content_type": 16,
+    "codename": "add_service"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 62,
+  "fields": {
+    "name": "Can change service",
+    "content_type": 16,
+    "codename": "change_service"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 63,
+  "fields": {
+    "name": "Can delete service",
+    "content_type": 16,
+    "codename": "delete_service"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 64,
+  "fields": {
+    "name": "Can view service",
+    "content_type": 16,
+    "codename": "view_service"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 65,
+  "fields": {
+    "name": "Can add comment",
+    "content_type": 17,
+    "codename": "add_comment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 66,
+  "fields": {
+    "name": "Can change comment",
+    "content_type": 17,
+    "codename": "change_comment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 67,
+  "fields": {
+    "name": "Can delete comment",
+    "content_type": 17,
+    "codename": "delete_comment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 68,
+  "fields": {
+    "name": "Can view comment",
+    "content_type": 17,
+    "codename": "view_comment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 69,
+  "fields": {
+    "name": "Can add comment rate",
+    "content_type": 18,
+    "codename": "add_commentrate"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 70,
+  "fields": {
+    "name": "Can change comment rate",
+    "content_type": 18,
+    "codename": "change_commentrate"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 71,
+  "fields": {
+    "name": "Can delete comment rate",
+    "content_type": 18,
+    "codename": "delete_commentrate"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 72,
+  "fields": {
+    "name": "Can view comment rate",
+    "content_type": 18,
+    "codename": "view_commentrate"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 73,
+  "fields": {
+    "name": "Can add site",
+    "content_type": 19,
+    "codename": "add_site"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 74,
+  "fields": {
+    "name": "Can change site",
+    "content_type": 19,
+    "codename": "change_site"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 75,
+  "fields": {
+    "name": "Can delete site",
+    "content_type": 19,
+    "codename": "delete_site"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 76,
+  "fields": {
+    "name": "Can view site",
+    "content_type": 19,
+    "codename": "view_site"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 77,
+  "fields": {
+    "name": "Can add top casino",
+    "content_type": 20,
+    "codename": "add_topcasino"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 78,
+  "fields": {
+    "name": "Can change top casino",
+    "content_type": 20,
+    "codename": "change_topcasino"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 79,
+  "fields": {
+    "name": "Can delete top casino",
+    "content_type": 20,
+    "codename": "delete_topcasino"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 80,
+  "fields": {
+    "name": "Can view top casino",
+    "content_type": 20,
+    "codename": "view_topcasino"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$216000$Vt5D4iObm7pr$RMYo3aQNC1HSvPsTG08x/2zo7iuHxa7h5aco6Zc2BfU=",
+    "last_login": "2020-08-21T19:11:16.243Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2019-09-09T23:24:18.678Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$180000$Yztv8vcbyedq$BriasArXHXA8uvHr9uPXSFZmuK0pkJ6aFObWO6Ae2QM=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "user",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2020-08-13T01:43:05.525Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "0iq7q8mgx2q9m8yrb0fd45b00epzcd34",
+  "fields": {
+    "session_data": "ZDk4MTZiY2ViZWI3ZGNhZmI4ZTI5MWQzYWRmMGJlNTUxNmFlYjg3Mzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI1ZmFhNDU1YzA5ZDgyNTI0NWY3YTg3Y2JhNmUwODhhNzFmYTk2NzY1In0=",
+    "expire_date": "2020-08-27T01:27:07.852Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "3lhw0ognqztkgxt1wpw8hwxuwfoq5ies",
+  "fields": {
+    "session_data": "YTM1MzEwMmYzMDcyN2I0ZjcxZDA2YjY2M2NkYjQ2ODI1YWE4MDhhYzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIyMmI2ZWQ5ZmY0Y2FmNDA4MjFjNGI5MDM4ZDhmYmU1NmEzNDg2OGQwIn0=",
+    "expire_date": "2019-10-28T14:47:59.392Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "9aogkh9gpwxke6vrgb69uzuonevcfjc7",
+  "fields": {
+    "session_data": ".eJxVjEEOgyAQRe_CuiECOjhddt8TNA0BZqhWI43oqundq4kbt--9_7_ik8tS3NgPTOL6UOp5Ec6vS-fWwrPrNyiUOLHg48DTLujtp1eWMU_L3Ae5J_KwRd4z8Xg72tNB50u3rVOACk2gRiesFANDHUDFGqsmNQbApMiBEA3alhRYINbU6hasjtqiFr8_Z_49ng:1k9HWe:SEV_6KjjE7NH0IdVLHMqwLF5GPf9gEB9-bGTKGL8ofE",
+    "expire_date": "2020-09-05T00:36:52.966Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "9onbd03upunky5ch0tvptagh87rom7tg",
+  "fields": {
+    "session_data": "ZDk4MTZiY2ViZWI3ZGNhZmI4ZTI5MWQzYWRmMGJlNTUxNmFlYjg3Mzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI1ZmFhNDU1YzA5ZDgyNTI0NWY3YTg3Y2JhNmUwODhhNzFmYTk2NzY1In0=",
+    "expire_date": "2020-06-25T12:09:35.295Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "c2ebjvxsdlahjhrvgrzty9j31kgcpwdo",
+  "fields": {
+    "session_data": "ZDk4MTZiY2ViZWI3ZGNhZmI4ZTI5MWQzYWRmMGJlNTUxNmFlYjg3Mzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI1ZmFhNDU1YzA5ZDgyNTI0NWY3YTg3Y2JhNmUwODhhNzFmYTk2NzY1In0=",
+    "expire_date": "2020-06-18T14:15:06.006Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "dx7u1c5mpuzh3kzay6miomoemutyl479",
+  "fields": {
+    "session_data": "YTM1MzEwMmYzMDcyN2I0ZjcxZDA2YjY2M2NkYjQ2ODI1YWE4MDhhYzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIyMmI2ZWQ5ZmY0Y2FmNDA4MjFjNGI5MDM4ZDhmYmU1NmEzNDg2OGQwIn0=",
+    "expire_date": "2019-11-02T13:14:16.134Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "e0aquqgafy436q6ynegs3isiit7x1461",
+  "fields": {
+    "session_data": "YTM1MzEwMmYzMDcyN2I0ZjcxZDA2YjY2M2NkYjQ2ODI1YWE4MDhhYzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIyMmI2ZWQ5ZmY0Y2FmNDA4MjFjNGI5MDM4ZDhmYmU1NmEzNDg2OGQwIn0=",
+    "expire_date": "2019-10-18T16:18:28.651Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "e8m9frt1urqqct7se05q7gij36b8481b",
+  "fields": {
+    "session_data": "ZDk4MTZiY2ViZWI3ZGNhZmI4ZTI5MWQzYWRmMGJlNTUxNmFlYjg3Mzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI1ZmFhNDU1YzA5ZDgyNTI0NWY3YTg3Y2JhNmUwODhhNzFmYTk2NzY1In0=",
+    "expire_date": "2020-06-18T15:07:51.218Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "g1frcl2mnwwqn4wuca4p08flconlyz4c",
+  "fields": {
+    "session_data": "eyJwb3N0c19saWtlZCI6WzExXX0:1k9VtD:DsCuqwcVD0hefv60d1uxWMlQRTWvFe7Lu8x2_c86QsQ",
+    "expire_date": "2020-09-05T15:57:07.747Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "jgofj3sbfvsfsfwjnesji03kr1b9068o",
+  "fields": {
+    "session_data": "YTM1MzEwMmYzMDcyN2I0ZjcxZDA2YjY2M2NkYjQ2ODI1YWE4MDhhYzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIyMmI2ZWQ5ZmY0Y2FmNDA4MjFjNGI5MDM4ZDhmYmU1NmEzNDg2OGQwIn0=",
+    "expire_date": "2019-11-04T14:19:15.884Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "jrj11n7gx8ydryf38j4dvgfj7k456zxr",
+  "fields": {
+    "session_data": "YTM1MzEwMmYzMDcyN2I0ZjcxZDA2YjY2M2NkYjQ2ODI1YWE4MDhhYzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIyMmI2ZWQ5ZmY0Y2FmNDA4MjFjNGI5MDM4ZDhmYmU1NmEzNDg2OGQwIn0=",
+    "expire_date": "2019-10-19T08:45:04.325Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "l41b9lgp7idvbqsm4nacyh8s3ds9cznx",
+  "fields": {
+    "session_data": "YTM1MzEwMmYzMDcyN2I0ZjcxZDA2YjY2M2NkYjQ2ODI1YWE4MDhhYzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIyMmI2ZWQ5ZmY0Y2FmNDA4MjFjNGI5MDM4ZDhmYmU1NmEzNDg2OGQwIn0=",
+    "expire_date": "2019-10-26T09:45:20.227Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "ovpf64495n0zdoupn45ofs8gcn5d4lfr",
+  "fields": {
+    "session_data": "YTM1MzEwMmYzMDcyN2I0ZjcxZDA2YjY2M2NkYjQ2ODI1YWE4MDhhYzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIyMmI2ZWQ5ZmY0Y2FmNDA4MjFjNGI5MDM4ZDhmYmU1NmEzNDg2OGQwIn0=",
+    "expire_date": "2019-10-06T05:21:44.285Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "pccxzflyzi62zpzrkqy0xwtbz0g0msck",
+  "fields": {
+    "session_data": "YTM1MzEwMmYzMDcyN2I0ZjcxZDA2YjY2M2NkYjQ2ODI1YWE4MDhhYzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIyMmI2ZWQ5ZmY0Y2FmNDA4MjFjNGI5MDM4ZDhmYmU1NmEzNDg2OGQwIn0=",
+    "expire_date": "2019-10-24T17:41:39.610Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "pnpoytg1d3ltj9s0qfptfscu87qnkbx0",
+  "fields": {
+    "session_data": "YTM1MzEwMmYzMDcyN2I0ZjcxZDA2YjY2M2NkYjQ2ODI1YWE4MDhhYzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIyMmI2ZWQ5ZmY0Y2FmNDA4MjFjNGI5MDM4ZDhmYmU1NmEzNDg2OGQwIn0=",
+    "expire_date": "2019-09-24T15:36:16.770Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "rlngo4eiq2tcqvjr1tbwz8f1ntlv1d9o",
+  "fields": {
+    "session_data": "YTM1MzEwMmYzMDcyN2I0ZjcxZDA2YjY2M2NkYjQ2ODI1YWE4MDhhYzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIyMmI2ZWQ5ZmY0Y2FmNDA4MjFjNGI5MDM4ZDhmYmU1NmEzNDg2OGQwIn0=",
+    "expire_date": "2019-10-27T14:18:20.428Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "sd108mzdjecxqnet86cvwzyt9t29t51h",
+  "fields": {
+    "session_data": "YTM1MzEwMmYzMDcyN2I0ZjcxZDA2YjY2M2NkYjQ2ODI1YWE4MDhhYzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIyMmI2ZWQ5ZmY0Y2FmNDA4MjFjNGI5MDM4ZDhmYmU1NmEzNDg2OGQwIn0=",
+    "expire_date": "2019-11-05T12:34:49.029Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "tqirzzdwo07memwpaqfwfgbgfpib7x89",
+  "fields": {
+    "session_data": "eyJwb3N0c19saWtlZCI6WzExXX0:1k9KIC:bXw7Ck12VTbJjXEL9mLQLHzhwJuHuuLs0MNMrg8m4fA",
+    "expire_date": "2020-09-05T03:34:08.635Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "w0g7k9xsxef3l6mtgm35l6ktruld6y3k",
+  "fields": {
+    "session_data": "YTM1MzEwMmYzMDcyN2I0ZjcxZDA2YjY2M2NkYjQ2ODI1YWE4MDhhYzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIyMmI2ZWQ5ZmY0Y2FmNDA4MjFjNGI5MDM4ZDhmYmU1NmEzNDg2OGQwIn0=",
+    "expire_date": "2019-09-26T18:55:02.001Z"
+  }
+},
+{
+  "model": "sites.site",
+  "pk": 1,
+  "fields": {
+    "domain": "bestcasinos.cc",
+    "name": "bestcasinos.cc"
+  }
+},
+{
+  "model": "django_summernote.attachment",
+  "pk": 1,
+  "fields": {
+    "name": "2.png",
+    "file": "django-summernote/2019-09-11/4b8745e9-614c-4cac-95ad-2e7df95c9fd4.png",
+    "uploaded": "2019-09-11T02:25:14.316Z"
+  }
+},
+{
+  "model": "django_summernote.attachment",
+  "pk": 2,
+  "fields": {
+    "name": "753891674_preview_photo.jpg",
+    "file": "django-summernote/2019-09-11/1dfa796e-a5a9-4eb3-9cd3-2e4cab0c7c9d.jpg",
+    "uploaded": "2019-09-11T02:28:11.568Z"
+  }
+},
+{
+  "model": "django_summernote.attachment",
+  "pk": 3,
+  "fields": {
+    "name": "WHuT7Nl.jpg",
+    "file": "django-summernote/2019-09-12/32254460-2544-4139-99c5-587f89896a89.jpg",
+    "uploaded": "2019-09-12T18:56:42.204Z"
+  }
+},
+{
+  "model": "django_summernote.attachment",
+  "pk": 4,
+  "fields": {
+    "name": "images.jpg",
+    "file": "django-summernote/2019-09-12/6fc86bcd-a212-4550-ac4c-db66438bea7b.jpg",
+    "uploaded": "2019-09-12T19:00:30.519Z"
+  }
+},
+{
+  "model": "django_summernote.attachment",
+  "pk": 5,
+  "fields": {
+    "name": "WHuT7Nl.jpg",
+    "file": "django-summernote/2019-09-12/7068a64c-8c31-4ed9-86d5-83ae3376ba8d.jpg",
+    "uploaded": "2019-09-12T19:00:42.715Z"
+  }
+},
+{
+  "model": "django_summernote.attachment",
+  "pk": 6,
+  "fields": {
+    "name": "15623587770450.jpg",
+    "file": "django-summernote/2019-09-15/3b670d84-9420-45cd-96e1-6c0bfdeae144.jpg",
+    "uploaded": "2019-09-15T03:10:08.759Z"
+  }
+},
+{
+  "model": "django_summernote.attachment",
+  "pk": 7,
+  "fields": {
+    "name": "tenor.gif",
+    "file": "django-summernote/2019-09-22/7118b4cd-6190-44a7-baf6-3c7ee2466b2d.gif",
+    "uploaded": "2019-09-22T05:24:06.066Z"
+  }
+},
+{
+  "model": "django_summernote.attachment",
+  "pk": 8,
+  "fields": {
+    "name": "1___1773_650x410.jpg",
+    "file": "django-summernote/2019-10-13/a45312c8-72e5-4f12-b5f3-366ace9f0004.jpg",
+    "uploaded": "2019-10-13T14:19:24.029Z"
+  }
+},
+{
+  "model": "django_summernote.attachment",
+  "pk": 9,
+  "fields": {
+    "name": "15592385604092.jpg",
+    "file": "django-summernote/2019-10-13/d8e2c776-252c-4353-8436-27d8ad68ecdd.jpg",
+    "uploaded": "2019-10-13T14:19:50.621Z"
+  }
+}

@@ -114,13 +114,7 @@
 
                 <!-- Rating Card Rating -->
                 <div class="col">
-                    <div class="rating-card-stars">
-                        <span>5/5</span>
-                        <img src="{% static 'img/star.png' %}" alt="">
-                        <img src="{% static 'img/star.png' %}" alt="">
-                        <img src="{% static 'img/star.png' %}" alt="">
-                        <img src="{% static 'img/star.png' %}" alt="">
-                        <img src="{% static 'img/star.png' %}" alt="">
+                    <div class="rating-card-stars">{{ casino.get_avg_main_rate }} 🌟
                     </div>
 
                     <div class="rating-card-info">
@@ -146,10 +140,10 @@
                 <!-- Rating Card Buttons -->
                 <div class="col">
                     <div class='rating-card-review-button'><a
-                            href="{% url 'casino_detail' casino.slug %}"
+                            href="{{ casino.link }}"
                             class="btn btn-success">Play</a></div>
                     <div class='rating-card-review-button'><a
-                            href="{% url 'casino_detail' casino.slug %}"
+                            href="{% url 'blog:casino_detail' casino.slug %}"
                             class="btn btn-primary">Review</a></div>
                 </div>
                 <!-- /Rating Card Buttons -->
