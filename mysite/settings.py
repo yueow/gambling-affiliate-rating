@@ -37,11 +37,14 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.cache.UpdateCacheMiddleware',     # Caching
     'django.middleware.common.CommonMiddleware',
+    'django.middleware.cache.FetchFromCacheMiddleware',  # Caching
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'mysite.metric_middleware.metric_middleware', # Metric
 ]
 
 ROOT_URLCONF = 'mysite.urls'
@@ -179,6 +182,22 @@ X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 AUTH_USER_MODEL = 'auth.User'
 SITE_ID = 1
+
+# Caching 
+CACHE_MIDDLEWARE_ALIAS = 'default'  # which cache alias to use
+CACHE_MIDDLEWARE_SECONDS = '600'    # number of seconds to cache a page for (TTL)
+CACHE_MIDDLEWARE_KEY_PREFIX = ''    # should be used if the cache is shared across multiple sites that use the same Django instance
+# CACHES = {
+#     'default': {
+#         'BACKEND': 'django.core.cache.backends.dummy.DummyCache',
+#     }
+# }
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.memcached.MemcachedCache',
+        'LOCATION': '127.0.0.1:11211',
+    }
+}
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True

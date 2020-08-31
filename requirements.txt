@@ -2,10 +2,14 @@ asgiref==3.2.10
 Django==3.1
 django-autoslug==1.9.8
 django-disqus==0.5
+#django-redis==4.12.1
 django-summernote==0.8.11.6
 django-utils-six==2.0
 mock==4.0.2
 mysqlclient==2.0.1
 Pillow==7.2.0
+python-memcached==1.59
 pytz==2020.1
+redis==3.5.3
+six==1.15.0
 sqlparse==0.3.1

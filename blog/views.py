@@ -10,6 +10,7 @@ from django.views.decorators.http import require_POST
 from django.views.decorators.csrf import csrf_exempt, ensure_csrf_cookie
 from django.db.models import Q
 from casinos.models import Casino, CasinoRating, TopCasino, UserExists, IpExists
+from django.views.decorators.cache import cache_page
 
 from casinos import filters
 from blog.models import Post
@@ -18,6 +19,7 @@ logger = logging.getLogger(__name__)
 
 
 # Rating Page
+@cache_page(60 * 15)
 def rating_view(request):
     # !Implement using Haystack
     # Searching
