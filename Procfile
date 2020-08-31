@@ -1,0 +1,1 @@
+web: gunicorn bestcasinos.wsgi --log-file -
